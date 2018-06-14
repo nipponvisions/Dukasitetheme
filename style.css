@@ -1,0 +1,361 @@
+/*
+Theme name: Dukasitetheme
+Author: Mathenge Moses
+Version: 0.1
+Description: Powers the Dukasite with some custom divs
+
+*/
+
+/* header_style.css    */
+
+
+@import "css/ul_products_style.css"; /* Using a string */
+
+
+/* header_style.css    */
+
+#header{
+    /*   border: 2px solid blue; */
+    height: 310px;
+    background-color: #b59957;
+
+}
+#header h1{
+    height: 200px;
+}
+
+	/* #headerimage {   See Header.php template     }*/
+
+.description h3 {
+    color:blue; 
+}   
+
+
+
+
+html,
+
+body{
+	background-color: #ffcc66c7;
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+
+#main_container {
+	border: 2px solid red;
+	max-width:1050px;
+	margin:auto;
+	min-height:100%;
+	position: relative;	
+	padding: 2px;
+	width: 100%;
+	background-color: #FC6;
+
+}
+
+nav.header_menu{
+	background-color: #b58e53;
+}
+
+nav.header_menu ul{
+	list-style: none;
+	margin-left: 100px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0; 
+	padding-left: 3px;
+	border-left: 1px solid white;
+
+}
+
+nav.header_menu ul li{
+	box-sizing: border-box;
+	display:inline-block;
+	border-right: 1px solid white;
+	min-width: 75px;
+	padding: 7px;  
+
+ }
+
+ nav.header_menu ul li a{
+ 	/* line-height: 34px;  */
+ }
+
+
+#body_section_container {
+	/*border: 2px solid green;
+	margin-bottom: 0;
+	width: 1024px;
+	padding: 10px;
+
+	*/
+
+}
+
+.woocommerce-breadcrump {
+	/*border: 2px solid blue;*/
+	background-color: palegoldenrod;
+
+}
+
+.woocommerce-products-header{
+/*	border: 2px solid blue;*/
+    background-color: #b599574a;
+}
+
+
+
+.dukasite_loop{
+	/*flex-grow: 3;*/
+	border:2px solid blue;
+	padding-bottom: 10px;
+	float: right;
+	width: 65%;
+
+
+
+}
+
+.loop_contents{
+	/*border: 2px solid blue;*/
+	display: block;
+}
+
+
+/*  XXXXXXX   See ul_products_style sheet    XXXXXXX  */
+
+/** below_flexbox_container   **/
+.below_flexbox_container{
+	display: block;
+	border: 2px solid red;
+	background-color: #999;
+	padding: 10px;
+
+}
+
+.below_flexbox_container p{
+/*	border:1px solid blue;*/
+	display: inline-block;
+
+}
+
+nav.woocommerce-pagination{
+/*	border: 1px solid blue;*/
+	background-color: white;
+		
+}
+
+ul.page-numbers{
+/*	border: 1px solid blue;*/
+	background-color: #d8d8e2;
+	list-style:  none;
+	display: inline-block;
+	/*  NB  float: right; would require a clear fix  */
+
+}
+
+ul.page-numbers li{
+	float: left;
+
+}
+
+
+/** TESTING jAVA  **/
+#jambo { color:#F36; 
+		font-weight:bold;
+	}
+
+footer {
+	/*border: 2px solid blue;*/
+	background:#6cf;
+	margin-bottom: 0;
+
+
+	width:100%;
+	height:60px;   /* Height of the footer */
+}
+
+
+/* store front  css */
+/* WooCommerce 3.0 Gallery */
+/* https://woocommerce.wordpress.com/2017/02/28/adding-support-for-woocommerce-2-7s-new-gallery-feature-to-your-theme/
+*/
+
+
+
+.woocommerce-product-gallery{
+	border: 2px solid green; 
+/*	background-color: purple;*/
+	display: inline-block;
+	width: 35%;
+
+}
+
+
+
+
+
+.woocommerce-product-gallery--columns-4{
+/*	border:2px solid red;*/
+	width: 400px; 
+
+}
+
+.woocommerce-product-gallery__wrapper{
+	min-height: 310px;
+
+}
+.woocommerce-product-gallery__image {
+/*	border:2px solid blue;*/
+	/*background-color: white;*/
+	margin: 0;
+	padding-bottom: 0;
+}
+
+.flex-active-slide {
+	border: 2px solid red;
+	margin: 0;
+	padding: 0;
+/*	max-width: 304px;*/
+	
+}
+
+
+
+
+.flex-viewport{
+	border: 2px solid blue;
+     min-height: 350px; 
+}
+
+}
+
+
+.woocommerce-product-gallery__image a {
+/*	border:2px solid blue;*/
+	/*background-color: white;*/
+}
+
+.woocommerce-product-gallery__image a img{
+
+	width: 300px;
+	height: 300px;
+
+}
+
+
+
+
+
+
+
+.woocommerce-product-gallery__trigger {
+
+}
+
+.flex-control-thumbs{
+	
+}
+
+.data-thumb-alt{
+
+}
+
+.flex-control-nav {
+	/*border:2px solid blue;*/
+	background-color: pink;
+	min-height: 110px;
+
+}
+
+
+.flex-control-nav li{
+	list-style: none;
+	float: left;
+	padding: 2px;
+	opacity: 0.5;
+}
+
+ .flex-control-thumbs{
+ 	border: 2px solid blue;
+ }
+
+
+
+
+
+.flex-control-nav li:nth-child(1){
+	opacity: 1;
+}
+
+
+.summary{
+/*	border:2px solid blue;*/
+	float: right;
+	width: 30%;
+	clear: none;
+
+	
+}
+
+
+.woocommerce-tabs {
+
+	border: 2px solid blue;
+    clear: both;
+}
+
+
+.woocommerce-tabs ul{
+	background-color: gold;
+	display: block;
+
+}
+
+.woocommerce-tabs ul li{
+	list-style: none;
+	display: inline-block;
+	padding-right: 5px;	
+	clear: both;
+}
+
+#tab-description {
+	/*border:2px solid blue;*/
+	clear: both;
+}
+
+
+#notice{
+	background-color: red;
+}
+
+.empty_query{
+/*	background-color: white;*/
+}
+
+
+#sidebar{
+/*	border:2px solid blue;*/
+	border: 1px solid white;
+	background-color: #d4a444;
+	float: left;
+	width: 28%;
+	padding-left: 2px;
+	padding-right: 2px;
+	clear: none;
+	
+
+
+}
+
+
+
+.product{
+
+	border: 1px solid white;
+	width: 68%;
+	float: right;
+
+	padding:  0;
+}

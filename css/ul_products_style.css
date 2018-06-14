@@ -1,0 +1,163 @@
+
+
+
+/*display horizonataly */
+
+
+ul.products{
+	border: 1px solid blue;
+
+	width: 70%;
+/*	width: 100%;*/
+	float: right;
+	clear: both;
+	margin: 0;
+	padding: 0;
+
+
+}
+
+ul.products li{
+
+/*    background-color: pink;*/
+    list-style: none;
+
+}
+
+ul.products li a{
+
+
+	}
+
+/*	COLUMNS */
+
+
+
+
+.columns-1 li{
+/*	border: 1px solid blue;*/
+	display: inline-block;
+	width: 98%;
+	height: 300px;
+	float: left;
+	margin: 2px;
+	clear: none;
+	text-align: center;	
+}
+
+
+
+
+.columns-2 li{
+/*	border: 1px solid blue;*/
+	display: inline-block;
+	width: 45%;
+	height: 300px;
+	float: left;
+	margin: 2px;
+	clear: none;
+	text-align: center;	
+}
+
+
+
+.columns-4 {
+
+}
+.columns-4 li{
+/*	border: 1px solid blue;*/
+	display: inline-block;
+	width: 24%;
+	height: 300px;
+	float: left;
+	margin: 2px;
+	clear: none;
+	text-align: center;	
+
+}
+
+.columns-4 li a{
+/*	text-align: center;*/
+}
+
+
+
+.columns-3{
+		/*DEFAULT COLUMN */
+	width: 70%;
+	float: right;
+	clear: both;
+	padding:  0;
+
+}
+.columns-3 li{
+/*	border: 1px solid blue;*/
+	display: inline-block;
+	width: 30%;
+
+	height: 300px;
+	margin: 8px;
+	text-align: center;	
+
+		
+}
+
+
+.onsale{
+	display: block;
+	padding: 2px;
+	background-color: #ff7300;
+	width: 50px;
+	text-align: center;
+	font-size: x-large;
+}
+
+/*IMAGE DIMENSIONS IS SET ELSEWHERE */
+
+h2.woocommerce-loop-product__title{
+	    font-weight: 100;
+
+}
+
+.star-rating{
+/*	border: 2px solid blue;*/
+	display: block;
+	padding: 5px;
+}
+
+span.price{
+/*	border: 2px solid blue;*/
+	display: block;
+	padding: 5px;
+
+}
+
+del{
+	background-color: white;
+}
+
+ins{
+	background-color: grey;
+	margin-left: 10px;
+}
+
+.add_to_cart_button{
+/*	border: 2px solid blue;*/
+	background-color: yellow;
+	display: block;
+	padding: 5px;
+	width: 100px;
+	text-align: center;
+
+}
+
+
+.related{
+	background-color: white;
+	min-height: 400px;
+}
+
+.related ul{
+	width: 100%;
+}
+
