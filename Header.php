@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <Meta charset="<?php bloginfo( 'charset' );?> " >
@@ -15,9 +15,7 @@
              
             </style>
 
-        <?php wp_head(); ?>
-
-        
+        <?php wp_head(); ?>     
     </head>
 
 
@@ -39,15 +37,3 @@
                                        
                 </nav><!--header_menu -->  
         </div><!--header --> 
-
-
-
-
-
-
-
-
-
-
-
-

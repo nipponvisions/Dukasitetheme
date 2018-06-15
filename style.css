@@ -359,3 +359,22 @@ footer {
 
 	padding:  0;
 }
+
+
+/*My account page */
+nav.woocommerce-MyAccount-navigation{
+	background-color: pink;
+}
+ .woocommerce-MyAccount-navigation ul{
+ 	list-style: none;
+
+ }
+ .woocommerce-MyAccount-navigation ul li{
+
+ }
+form.woocommerce-form.woocommerce-form-login.login{
+	border: 2px solid blue;
+}
+.woocommerce form .form-row input.input-text {
+	width: 25%;
+}

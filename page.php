@@ -1,7 +1,7 @@
 <?php
 /** Template name: page.php
-* Description: the background  Template For  All Pages
-* N/B this is not a woocommerce template
+    *Description: the background  Template For  All Pages
+    *N/B this is not a woocommerce template
 **/
 
 ?>
@@ -52,8 +52,3 @@ get_sidebar();
 
 <?php get_footer(); ?>
 <!--dont close 
-
-
-
-
-  
