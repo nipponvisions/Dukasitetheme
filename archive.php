@@ -1,6 +1,6 @@
 <?php
-    /** Template name: home.php
-        *Description: The template for powering the home page
+    /** Template name: archive.php 
+        *Description: The template for  displaying a list of Posts
         *Author Mathenge Moses 
         * N/B this is not a woocommerce template
 
@@ -14,8 +14,8 @@
 <!-- http://localhost/DEV/Dukasite\wp-content\themes\dukasitetheme\images\Ziggy_Bus_cropped.jpg -->
 
     <div id="body_section_container"> 
-        <div id="notice"> this is the home.php template </div>
-
+       This is Archive.php
+        
 
         <?php
         if (have_posts()) {

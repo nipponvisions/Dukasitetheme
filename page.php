@@ -6,6 +6,7 @@
 
 ?>
 <?php   get_header('shop'); ?>
+<div id="notice"> this is page.php </div>
 
 
             <?php
