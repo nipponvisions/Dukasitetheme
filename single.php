@@ -14,7 +14,7 @@
 <!-- http://localhost/DEV/Dukasite\wp-content\themes\dukasitetheme\images\Ziggy_Bus_cropped.jpg -->
 
     <div id="body_section_container"> 
-      <div id="notice"> This is single.php itsw to display single posts </div>
+      <div id="notice"> This is single.php its to display single posts </div>
         
 
         <?php

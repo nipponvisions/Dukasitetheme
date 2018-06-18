@@ -1,16 +1,18 @@
 <?php
 /* Template Name: Sidebar.php
+	Description: xxx 
 	theme: dukasite
-	by Moses
+	Author: by Moses
 */
 
 ?>
 
 <div id="sidebar">
-	<p> This is Moses Sidebar for Dukatheme  </p>
+	<p> This is  the left sidebar </p>
 
-	     <?php get_template_part('/woocommerce/product-searchform'); ?>
+	    <!--  <?php get_template_part('/woocommerce/product-searchform'); ?> -->
 
-		<?php dynamic_sidebar('widgetized-area') ; ?>
+		<?php  dynamic_sidebar('Main Left') ; ?>
+		<?php  // dynamic_sidebar('Main Right') ; ?>
 		
 </div>  <!-- close sidebar --> 

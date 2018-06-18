@@ -336,8 +336,8 @@ footer {
 
 
 #sidebar{
-/*	border:2px solid blue;*/
-	border: 1px solid white;
+	border:2px solid blue;
+/*	border: 1px solid white;*/
 	background-color: #d4a444;
 	float: left;
 	width: 28%;

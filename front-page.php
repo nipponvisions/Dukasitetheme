@@ -1,16 +1,20 @@
 <?php
- // template name: index.php
+ // template name: front-page.php
  // theme: dukasite
- // description: the Most Generic template
+ // description: tPowers the static front page of the site 
  // used when no any other  specific template is  availlable 
  // Author Moses
 
 ?>
 
  <?php get_header(); ?>
- <div id="notice">  <p> Powered by dukasite theme <b> index.php </b> </p>     </div>
+ <div id="notice">  <p> Powered by front-page.php </p>     </div>
+ <!-- dont insert image here -->
+ <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\Ziggy_Bus_cropped.jpg">
+<!-- instead use this link in the wordpree pages editor -->
+<!-- http://localhost/DEV/Dukasite\wp-content\themes\dukasitetheme\images\Ziggy_Bus_cropped.jpg -->
 
-<!--  	<div id="body_section_container"> 
+ 	<div id="body_section_container"> 
 
  		<?php
  		if (have_posts()) {
@@ -39,4 +43,4 @@
  <footer>
  <?php  get_footer(); ?>
  <!--dont close footer -->
- -->
+ 

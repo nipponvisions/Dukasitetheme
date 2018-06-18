@@ -32,18 +32,47 @@ add_theme_support( 'custom-header', $defaults );
  
 // register sidebar ,an area ran inthe admin ready to receive widgets 
 			// https://digwp.com/2010/02/how-to-widgetize-wordpress-theme/
-if (function_exists('register_sidebar')) {
+// if (function_exists('register_sidebar')) {
 
-	register_sidebar(array(
-		'name' => 'Widgetized Area',
-		'id'   => 'widgetized-area',
-		'description'   => 'Drag Any Widgets here to Displsy on screen .',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4>',
-		'after_title'   => '</h4>'
-	));
+// 	register_sidebars( 2, array(
+// 		'name' => 'Widgetized Area %d',
+// 		'id'   => 'widgetized-area',
+// 		'description'   => 'Drag Any Widgets here to Displsy on screen .',
+// 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+// 		'after_widget'  => '</div>',
+// 		'before_title'  => '<h4>',
+// 		'after_title'   => '</h4>'
+// 	)
+// 	);
+// }
+
+
+if (function_exists('register_sidebar')) {
+	# code...
+
+	register_sidebar(
+	  	array('name' => 'Main Left',
+	  		'id'  => 'mainleft',
+	  	)
+
+	);
+
+
+	register_sidebar(
+	  	array('name' => 'Main Right',
+	  		'id'  => 'mainright',
+	  	)
+
+	);
 }
+
+
+
+	// side bars
+ // add_action('widgets_init', 'widgettheme_sidebars');
+
+
+
 
 
 
