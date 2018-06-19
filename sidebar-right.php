@@ -7,11 +7,9 @@
 
 ?>
 
-<div id="sidebar">
-	<p> This is  right sidebar </p>
 
 	    <!--  <?php get_template_part('/woocommerce/product-searchform'); ?> -->
 
 	<?php dynamic_sidebar('Main Right') ; ?> 
 		
-</div>  <!-- close sidebar --> 
+

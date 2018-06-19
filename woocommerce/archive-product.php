@@ -32,7 +32,13 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
+<div class="below_flexbox_container">
 
+<?php get_sidebar('right'); ?>
+
+<div style="clear:both"></div>
+
+</div>
 
 
 

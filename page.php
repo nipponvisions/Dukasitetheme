@@ -42,9 +42,9 @@
 ?>
 
 
- <?php   get_sidebar(); ?>  
+ <?php //  get_sidebar('buri'); ?>  
 
-<?php  get_sidebar('right'); ?>
+
 
 
 
