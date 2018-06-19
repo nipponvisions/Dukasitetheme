@@ -22,6 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
+<div id="notice"> <p> powered by single-product.php </p> </div>
+
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.
@@ -70,6 +72,6 @@ get_header( 'shop' ); ?>
 
 <div style ="clear:both"></div>
 
-<?php get_footer( 'shop' );
+ <?php get_footer( 'shop' ); 
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

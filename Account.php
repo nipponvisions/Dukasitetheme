@@ -18,28 +18,16 @@
 
         <?php
         if (have_posts()) {
-            # code...
-            while (have_posts()) {
-                # code...
-                the_post();
-        // ---------------------------------------------------------------
+         # code...
+
+                get_template_part('loop');
+
+            }// end iff
+           
         ?>
-
-   <h2>  <?php the_title(); ?> </h2> 
-        
-        <?php
-
-                the_content() ;
-
-        // ---------------------------------------------------------------
-
-            } 
-        } 
-
-        ?>
+   
 
     </div> <!-- body_section_container -->
-
  <footer>
  <?php  get_footer(); ?>
  <!--dont close footer -->

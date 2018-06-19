@@ -34,15 +34,23 @@
             
 <?php
 
-        if (have_posts()) {
-            // continue with the rest of the loop
-             get_template_part('loop');
-        }// close if 
+    if (have_posts()) {
+        ?>
+             <div class="dukasite_loop">
+                <?php
+                    
+                    # Continue with the rest of the loop
+                    get_template_part('loop');
+                ?>
+            </div>
 
+        <?php
+    }// end if
 ?>
 
 
- <?php //  get_sidebar('buri'); ?>  
+
+ <?php  get_sidebar('shop'); ?>  
 
 
 

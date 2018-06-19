@@ -3,9 +3,7 @@
         *Description: The template for  displaying  Single posts
         *Author Mathenge Moses 
         * N/B this is not a woocommerce template
-
     **/
-
 ?>
 <?php   get_header('shop'); ?>
 <!-- dont insert image here -->
@@ -18,25 +16,13 @@
         
 
         <?php
-        if (have_posts()) {
+            if (have_posts()) {
             # code...
-            while (have_posts()) {
-                # code...
-                the_post();
-        // ---------------------------------------------------------------
-        ?>
 
-          <!--   <h2>  <?php the_title(); ?> </h2> -->
-        
-        <?php
+                get_template_part('loop');
 
-                the_content() ;
-
-        // ---------------------------------------------------------------
-
-            } 
-        } 
-
+            }// end iff
+           
         ?>
 
     </div> <!-- body_section_container -->

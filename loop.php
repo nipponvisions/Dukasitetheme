@@ -2,29 +2,31 @@
 <?php
 
 /** Template name :loop.php
-	*Description:  The loop to be executed if there is a post
-	*This is not a woocommerce template , compare to  the theme storefront loop
+	*Description:  The loop to be executed if whenever there is a post.
+	*This is not a woocommerce template , 
 	*Theme: dukasite
+	*Author: Mathenge 
 **/?>
 
-<div class="dukasite_loop">
+<!-- <div class="dukasite_loop"> -->
 	<?php
 
+		# code...
+		while (have_posts()) {
 			# code...
-					while (have_posts()) {
-						# code...
-						the_post();
-				//---------------------------------------------------------------
-				?>
+					the_post();
+			//---------------------------------------------------------------
+			?>
 
-					<h2>  <?php the_title(); ?> </h2>
+				<h2>  <?php the_title(); ?> </h2>
 				
-				<?php
+			<?php
 
-						the_content();
+					the_content();
 
-				//---------------------------------------------------------------
-					} //endwhile
-		?>
+			//---------------------------------------------------------------
+		} //endwhile
+		
+	?>
 
-</div> <!-- dukasite_loop -->
+<!-- </div> dukasite_loop -->

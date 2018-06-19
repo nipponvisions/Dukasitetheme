@@ -17,29 +17,16 @@
  	<div id="body_section_container"> 
 
  		<?php
- 		if (have_posts()) {
- 			# code...
- 			while (have_posts()) {
- 				# code...
- 				the_post();
- 		// ---------------------------------------------------------------
- 		?>
+	 		if (have_posts()) {
+	 			# code...
+	 			get_template_part('loop');
 
- 			<h2>  <?php the_title(); ?> </h2>
-		
- 		<?php
 
- 				the_content() ;
 
- 		// ---------------------------------------------------------------
-
- 			} 
- 		} 
-
- 		?>
+	 		}//end if
+	 	?>
 
  	</div> <!-- body_section_container -->
-
  <footer>
  <?php  get_footer(); ?>
  <!--dont close footer -->
