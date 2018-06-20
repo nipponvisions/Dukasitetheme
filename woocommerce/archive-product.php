@@ -29,26 +29,15 @@ get_header( 'shop' );
  * @hooked woocommerce_breadcrumb - 20
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
-do_action( 'woocommerce_before_main_content' );
+ do_action( 'woocommerce_before_main_content' );
+ ?>
 
-?>
-<div class="below_flexbox_container">
-
-<?php get_sidebar('right'); ?>
-
-<div style="clear:both"></div>
-
-</div>
-
-
-
-
-<!-- <header class="woocommerce-products-header"> -->
+ <!-- <header class="woocommerce-products-header"> -->
     <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
         <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-    <?php endif; ?>
+    <?php endif; 
 
-    <?php
+     
     /**
      * Hook: woocommerce_archive_description.
      *
@@ -58,18 +47,39 @@ do_action( 'woocommerce_before_main_content' );
     do_action( 'woocommerce_archive_description' );
     ?>
 <!-- </header> -->
-<?php
 
-if ( have_posts() ) {
 
-    /**
-     * Hook: woocommerce_before_shop_loop.
-     *
-     * @hooked wc_print_notices - 10
-     * @hooked woocommerce_result_count - 20
-     * @hooked woocommerce_catalog_ordering - 30
-     */
-    do_action( 'woocommerce_before_shop_loop' );
+<div class="below_header"> 
+
+
+        <?php
+
+            if ( have_posts() ) {
+
+                /**
+                 * Hook: woocommerce_before_shop_loop.
+                 *
+                 * @hooked wc_print_notices - 10
+                 * @hooked woocommerce_result_count - 20
+                 * @hooked woocommerce_catalog_ordering - 30
+                 */
+                do_action( 'woocommerce_before_shop_loop' );
+
+        
+
+
+            get_template_part('/woocommerce/product-searchform');
+        ?> 
+
+
+</div><!--below_header -->
+
+
+    <?php
+
+  
+
+
 
     woocommerce_product_loop_start();
 

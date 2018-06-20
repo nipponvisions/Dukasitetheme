@@ -93,11 +93,27 @@ nav.header_menu ul li{
 
 }
 
-.woocommerce-breadcrump {
-	/*border: 2px solid blue;*/
-	background-color: palegoldenrod;
+
+.woocommerce-breadcrumb{
+	border: 2px solid blue;
+	background-color: white;
 
 }
+
+
+
+.below_header{
+	border: 2px solid blue;
+	background-color: pink;
+}
+
+
+
+
+.woocommerce-ordering{
+	float: right;
+}
+
 
 .woocommerce-products-header{
 /*	border: 2px solid blue;*/
