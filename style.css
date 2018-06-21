@@ -15,13 +15,14 @@ Description: Powers the Dukasite with some custom divs
 /* header_style.css    */
 
 #header{
-    /*   border: 2px solid blue; */
-    height: 310px;
+     border: 2px solid blue; 
+    /* height: 310px;  */
+
     background-color: #b59957;
 
 }
 #header h1{
-    height: 200px;
+    height: 100px;
 }
 
 	/* #headerimage {   See Header.php template     }*/
@@ -393,4 +394,25 @@ form.woocommerce-form.woocommerce-form-login.login{
 }
 .woocommerce form .form-row input.input-text {
 	width: 25%;
+}
+
+/* Front_static_page  */
+.below_banner_columns_wrapper{
+	border: 2px solid blue;
+	/*background-color: pink;*/
+}
+
+.below_banner_box{
+	border: 1px solid white;
+	display: inline-block;
+	width: 32%;
+
+}
+
+.below_banner_box img{
+	max-width: 200px;
+}
+
+.below_banner_box h3{
+	background-color: #efd59a;
 }
