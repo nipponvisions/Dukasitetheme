@@ -1,7 +1,7 @@
 <?php
  // template name: front-page.php
  // theme: dukasite
- // description: tPowers the static front page of the site 
+ // description: Powers the static front page of the site 
  // used when no any other  specific template is  availlable 
  // Author Moses
 
@@ -20,26 +20,40 @@
 
 <section id="body_section_container"> 
 
-		<center>  <h2> New Arrivals </h2> </center>
- 		<!-- the loop template goes here -->
- 		<!-- theree columns -->
- 	<div class="below_banner_columns_wrapper">
- 	 	
- 	 	<div class="below_banner_box">
- 	 		<h3> Human Hair Pieces and Wigs   </h3>
- 	 		  <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\Hair_Wigs.jpg" alt="Hair_Wigs">
+	<center>  <h2> New Arrivals </h2> </center>
+		<!-- the loop template goes here -->
+	
+		<!-- theree columns -->
+ <!-- 	<div class="below_banner_columns_wrapper"> -->
+ <div class="below_banner_flex">
+
+
+ 	 	<div class="box left">
+ 	 		<center>
+	 	 		<h3> Human Hair Pieces and Wigs   </h3>
+	 	 		<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\Hair_Wigs.jpg" alt="Hair_Wigs">
+	 	 	</center>
+ 	 	</div>
+ 	 	<div class="box mindle">
+ 	 		<center> 
+	 	 		<h3> African print materials and head scarfs </h3>
+	 	 		<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\African_materials.jpg" alt="African_materials">
+ 	 		</center>
+ 	 	</div>
+ 	 	<div class="box right">
+ 	 		<center> 
+ 	 			<h3> African Cuisine and Delicacies </h3>
+ 	 			<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\shelf_2.jpg"  alt="shelf_2">
+ 	 		</center>
 
  	 	</div>
- 	 	<div class="below_banner_box">
- 	 		<h3> African print materials and head scarfs </h3>
- 	 		<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\African_materials.jpg" alt="African_materials">
+
+ 	 		 	<div class="box right">
+ 	 		<center> 
+ 	 			<h3> African Cuisine and Delicacies </h3>
+ 	 			<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko.jpg"  alt="Roiko">
+ 	 		</center>
  	 		
-
- 	 	</div>
- 	 	<div class="below_banner_box">
- 	 		<h3> African Cuisine and Delicacies </h3>
- 	 		<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\shelf_2.jpg"  alt="shelf_2">
-
  	 	</div>
 
  	</div>
@@ -54,4 +68,4 @@
  
  	
 
- 	</div> <!-- body_section_container -->
+ </div> <!-- body_section_container -->

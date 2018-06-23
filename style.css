@@ -238,6 +238,23 @@ footer {
 	
 }
 
+.below_banner_flex{
+	display: flex;
+	background-color: #999;
+	border: 2px solid blue;
+
+}
+
+.box{
+	border: 1px solid white;
+
+	flex-grow:1;
+}
+
+.box img{
+
+	width: 200px;
+}
 
 
 
@@ -414,5 +431,9 @@ form.woocommerce-form.woocommerce-form-login.login{
 }
 
 .below_banner_box h3{
-	background-color: #efd59a;
+	background-color: #efd59a
+
+
+
+	;
 }
