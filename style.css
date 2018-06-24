@@ -158,16 +158,21 @@ nav.header_menu ul li{
 }
 
 nav.woocommerce-pagination{
-/*	border: 1px solid blue;*/
-	background-color: white;
-		
+	border: 1px solid blue;
+/*	background-color: white;*/
+    width: 200px;
+    float: right;
+    height: 40px;
 }
+		
+
 
 ul.page-numbers{
 /*	border: 1px solid blue;*/
 	background-color: #d8d8e2;
 	list-style:  none;
 	display: inline-block;
+	float: right;
 	/*  NB  float: right; would require a clear fix  */
 
 }
@@ -469,5 +474,11 @@ form.woocommerce-form.woocommerce-form-login.login{
 
 .box img{
 
-	width: 200px;
+	width: 200px; 
+}
+
+
+
+.test{
+	border: 2px solid blue;
 }

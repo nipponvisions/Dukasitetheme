@@ -68,14 +68,6 @@ if (function_exists('register_sidebar')) {
 
 
 
-	// side bars
- // add_action('widgets_init', 'widgettheme_sidebars');
-
-
-
-
-
-
 // declayer woo commerce support
 function dukasite_add_woocommerce_support() {
 	add_theme_support( 'woocommerce', array(
@@ -90,17 +82,6 @@ function dukasite_add_woocommerce_support() {
 add_action( 'after_setup_theme', 'dukasite_add_woocommerce_support' );
 
 
-
-remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination');
-add_action('dukasite_after_shop_loop', 'woocommerce_pagination');
-
-
-
-
-
-//  unhook the WooCommerce wrappers
-// remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-//remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
 // PRODUCT GALLERY 
 // https://woocommerce.wordpress.com/2017/02/28/adding-support-for-woocommerce-2-7s-new-gallery-feature-to-your-theme/
@@ -126,21 +107,6 @@ add_action('wp_enqueue_scripts', 'add_dukasite_javascripts');
 
 // DUKASITE hOOKS
 
-/*
-function dukasite_content_layout_setup(){
-	?>
-		<div id="container"> 
-		<div class="flex_container">
-	<?php
-}
-add_action('page_content_layout_setup', 'dukasite_content_layout_setup');
+remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination');
+add_action('dukasite_after_shop_loop', 'woocommerce_pagination');
 
-function dukasite_after_loop_wrappers(){
-	?>
-		</div> <!-- close flexbox2 -->
-		<!-- <div style="clear:both"></div> -->
-		</div> <!--  close flex container -->
-	<?php
-}
-add_action('page_after_loop_wrappers', 'dukasite_after_loop_wrappers');
-*/

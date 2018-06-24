@@ -56,19 +56,27 @@ get_header( 'shop' );
 
             if ( have_posts() ) {
 
-                /**
-                 * Hook: woocommerce_before_shop_loop.
-                 *
-                 * @hooked wc_print_notices - 10
-                 * @hooked woocommerce_result_count - 20
-                 * @hooked woocommerce_catalog_ordering - 30
-                 */
-                do_action( 'woocommerce_before_shop_loop' );
+                
 
-        
+                    /**
+                     * Hook: woocommerce_before_shop_loop.
+                     *
+                     * @hooked wc_print_notices - 10
+                     * @hooked woocommerce_result_count - 20
+                     * @hooked woocommerce_catalog_ordering - 30
+                     * @hooked woocommerce_pagination - 10
+                     */
+                     do_action( 'woocommerce_before_shop_loop' );
 
+               
+       
 
-            get_template_part('/woocommerce/product-searchform');
+          
+                    do_action('dukasite_after_shop_loop');
+
+                // Display product search form.
+                    get_product_search_form();
+            
         ?> 
 
 
