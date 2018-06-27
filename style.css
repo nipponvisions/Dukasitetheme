@@ -112,7 +112,8 @@ nav.header_menu ul li{
 
 
 .woocommerce-ordering{
-	float: right;
+	/*float: right;*/
+
 }
 
 
@@ -157,17 +158,21 @@ nav.header_menu ul li{
 
 }
 
+
 nav.woocommerce-pagination{
-/*	border: 1px solid blue;*/
-	background-color: white;
+/*	border: 1px solid blue;
+	*/
+	margin: 0;
+	padding: 0;
 		
 }
 
 ul.page-numbers{
 /*	border: 1px solid blue;*/
-	background-color: #d8d8e2;
+/*	background-color: #d8d8e2;*/
 	list-style:  none;
 	display: inline-block;
+	float: right;
 	/*  NB  float: right; would require a clear fix  */
 
 }
@@ -470,4 +475,12 @@ form.woocommerce-form.woocommerce-form-login.login{
 .box img{
 
 	width: 200px;
+}
+
+
+.below_header_flex{
+	/*border: 2px solid blue;*/
+	/*	background-color: #999;*/
+	display: flex;
+
 }
