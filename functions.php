@@ -83,6 +83,14 @@ add_action( 'after_setup_theme', 'dukasite_add_woocommerce_support' );
 
 
 
+
+
+
+//  unhook the WooCommerce wrappers
+ //remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+//remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+
 // PRODUCT GALLERY 
 // https://woocommerce.wordpress.com/2017/02/28/adding-support-for-woocommerce-2-7s-new-gallery-feature-to-your-theme/
 add_action( 'after_setup_theme', 'dukasitetheme_setup' ); 
@@ -107,6 +115,39 @@ add_action('wp_enqueue_scripts', 'add_dukasite_javascripts');
 
 // DUKASITE hOOKS
 
+
 remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination');
 add_action('dukasite_after_shop_loop', 'woocommerce_pagination');
 
+
+remove_action('woocommerce_before_shop_loop', 'wc_print_notices');
+remove_action('woocommerce_before_shop_loop','woocommerce_result_count', 20);
+remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
+
+add_action('result_count','woocommerce_result_count', 20);
+add_action('catalog_odering','woocommerce_catalog_ordering', 30);
+add_action('print_notices','wc_print_notices');
+add_action('pagination','woocommerce_pagination', 10);
+
+
+
+
+
+
+//create the below header hook  to replace the woocommerce before shop hook
+
+
+function below_header_hook_markup(){
+	?>
+		            <div class="below_header_flex">
+		                <div class="box">  <?php  get_template_part('/woocommerce/product-searchform'); ?> </div>
+		                <div class="box">  <?php do_action('result_count');?></div>
+		                <div class="box">  <?php do_action('catalog_odering'); ?> </div>
+		                <div class="box">  <?php do_action('pagination'); ?> </div>		                	            
+		            </div>
+
+		</div><!--below_header -->
+	<?php
+}
+add_action('dukasite_before_shop_loop','below_header_hook_markup');

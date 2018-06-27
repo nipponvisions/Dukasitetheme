@@ -45,16 +45,17 @@ get_header( 'shop' );
      * @hooked woocommerce_product_archive_description - 10
      */
     do_action( 'woocommerce_archive_description' );
+
     ?>
 <!-- </header> -->
 
 
 <div class="below_header"> 
 
-
         <?php
 
             if ( have_posts() ) {
+
 
                 
 
@@ -88,6 +89,19 @@ get_header( 'shop' );
   
 
 
+            /**
+                *Hook: dukasite_before_shop_loop
+                *
+                *@Hooked wc_print_notices
+                *@hooked woocommerce/product-searchform
+                *@Hooked woocommerce_result_count'- 20
+                *@Hooked woocommerce_catalog_ordering -30
+                *@hooked woocommerce_pagination', 10);
+                *  custom markup  
+            **/
+            do_action('dukasite_before_shop_loop');
+
+
 
     woocommerce_product_loop_start();
 
@@ -102,7 +116,7 @@ get_header( 'shop' );
              */
             do_action( 'woocommerce_shop_loop' );
 
-            wc_get_template_part( 'content', 'product' );
+             wc_get_template_part( 'content', 'product' );
         }
     }
 
@@ -113,7 +127,9 @@ get_header( 'shop' );
      *
      * @hooked woocommerce_pagination - 10
      */
-    do_action( 'woocommerce_after_shop_loop' );
+    // do_action( 'woocommerce_after_shop_loop' );
+      
+
 } else {
     /**
      * Hook: woocommerce_no_products_found.

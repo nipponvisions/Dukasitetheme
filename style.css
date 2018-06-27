@@ -112,7 +112,8 @@ nav.header_menu ul li{
 
 
 .woocommerce-ordering{
-	float: right;
+	/*float: right;*/
+
 }
 
 
@@ -157,19 +158,28 @@ nav.header_menu ul li{
 
 }
 
+
 nav.woocommerce-pagination{
+<<<<<<< HEAD
 	border: 1px solid blue;
 /*	background-color: white;*/
     width: 200px;
     float: right;
     height: 40px;
+
+/*	border: 1px solid blue;
+	*/
+	margin: 0;
+	padding: 0;
+		
+
 }
 		
 
 
 ul.page-numbers{
 /*	border: 1px solid blue;*/
-	background-color: #d8d8e2;
+/*	background-color: #d8d8e2;*/
 	list-style:  none;
 	display: inline-block;
 	float: right;
@@ -474,6 +484,7 @@ form.woocommerce-form.woocommerce-form-login.login{
 
 .box img{
 
+<<<<<<< HEAD
 	width: 200px; 
 }
 
@@ -481,4 +492,14 @@ form.woocommerce-form.woocommerce-form-login.login{
 
 .test{
 	border: 2px solid blue;
+
+	width: 200px;
+}
+
+
+.below_header_flex{
+	/*border: 2px solid blue;*/
+	/*	background-color: #999;*/
+	display: flex;
+
 }
