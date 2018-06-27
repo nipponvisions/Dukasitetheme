@@ -128,7 +128,7 @@ remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
 add_action('result_count','woocommerce_result_count', 20);
 add_action('catalog_odering','woocommerce_catalog_ordering', 30);
 add_action('print_notices','wc_print_notices');
-add_action('pagination','woocommerce_pagination', 10);
+add_action('page_pagination','woocommerce_pagination', 10);
 
 
 
@@ -140,11 +140,12 @@ add_action('pagination','woocommerce_pagination', 10);
 
 function below_header_hook_markup(){
 	?>
-		            <div class="below_header_flex">
-		                <div class="box">  <?php  get_template_part('/woocommerce/product-searchform'); ?> </div>
-		                <div class="box">  <?php do_action('result_count');?></div>
-		                <div class="box">  <?php do_action('catalog_odering'); ?> </div>
-		                <div class="box">  <?php do_action('pagination'); ?> </div>		                	            
+		            <div class="below_header_flex_container">
+		                <div class="box product-searchform">  <?php  get_template_part('/woocommerce/product-searchform'); ?> </div>
+		                <div class="box result_count">  <?php do_action('result_count');?></div>
+		                <div class="box catalog_odering">  <?php do_action('catalog_odering'); ?> </div>
+		                <div class="box page_pagination">  <?php do_action('page_pagination'); ?> </div>	
+
 		            </div>
 
 		</div><!--below_header -->

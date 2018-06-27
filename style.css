@@ -109,6 +109,19 @@ nav.header_menu ul li{
 }
 
 
+.below_header_flex_container{
+	/*border: 2px solid blue;*/
+	/*	background-color: #999;*/
+	display: flex;
+	flex-direction: row;
+	 align-items: baseline;
+
+}
+
+p.woocommerce-result-count {
+	margin: 0;
+}
+
 
 
 .woocommerce-ordering{
@@ -160,12 +173,12 @@ nav.header_menu ul li{
 
 
 nav.woocommerce-pagination{
-<<<<<<< HEAD
-	border: 1px solid blue;
+
+/*	border: 1px solid blue;*/
 /*	background-color: white;*/
-    width: 200px;
+ /*   width: 200px;*/
     float: right;
-    height: 40px;
+ /*   height: 40px;*/
 
 /*	border: 1px solid blue;
 	*/
@@ -183,6 +196,7 @@ ul.page-numbers{
 	list-style:  none;
 	display: inline-block;
 	float: right;
+	margin: 0;
 	/*  NB  float: right; would require a clear fix  */
 
 }
@@ -480,11 +494,13 @@ form.woocommerce-form.woocommerce-form-login.login{
 .box{
 	border: 1px solid white;
 	flex-grow:1;
+	margin: 0;
+	padding: 0;
 }
 
 .box img{
 
-<<<<<<< HEAD
+
 	width: 200px; 
 }
 
@@ -496,10 +512,3 @@ form.woocommerce-form.woocommerce-form-login.login{
 	width: 200px;
 }
 
-
-.below_header_flex{
-	/*border: 2px solid blue;*/
-	/*	background-color: #999;*/
-	display: flex;
-
-}
