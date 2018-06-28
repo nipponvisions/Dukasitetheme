@@ -440,67 +440,65 @@ form.woocommerce-form.woocommerce-form-login.login{
 
 .below_banner{
 	border: 2px solid blue;
-	background-color: pink;
+/*	background-color: pink;*/
 
 }
 
 
 .new_arrivals{
-	border-right: 2px solid blue;
+	/*border: 2px solid blue;*/
 	background-color: orange;
 }
+	.new_arrivals h2{
+		margin: 0;
+		padding: 0;
+		text-align: center;
 
-.below_banner ul{
-	border: 2px solid blue;
+	}
+	.new_arrivals ul{
+		/*border: 2px solid blue;*/
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
 
-	list-style: none;
-	display: flex;
-	margin: 0;
-	padding: 0;
+	}
 
+	.new_arrivals ul li{
+		border:1px solid white;
+		flex-grow:1;
+		list-style: none;
+		margin: 0;
+		text-align: center;
 
-}
+	}
 
-.below_banner ul li{
-/*	width: 22%;*/
-	/*display: inline-block;*/
-
-	border:1px solid white;
-	margin: 0;
-	flex-grow:1;
-
-}
-
-
-.below_banner ul li img{
+	.new_arrivals ul li img{
 	width: 50px;
-	
-}
+
+	}
 
 
-
-.below_banner_columns_wrapper{
-	border: 2px solid blue;
-	/*background-color: pink;*/
-}
-
-.below_banner_flex{
+.featured_items_columns{
+	/*border: 2px solid blue;*/
+	background-color: #ffa576;
 	display: flex;
-	background-color: #999;
-	border: 2px solid blue;
+	flex-direction: row;
+	
 
 }
+
 
 .box{
 	border: 1px solid white;
 	flex-grow:1;
 	margin: 0;
 	padding: 0;
+	text-align: center;
+	
 }
 
 .box img{
-
-
 	width: 200px; 
 }
 

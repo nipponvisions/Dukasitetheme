@@ -23,54 +23,41 @@
 
 	<div class="below_banner"> 
 		<div class="new_arrivals"> 
-			<h2>   <center>   New Arrivals  </center>   </h2> 
+			<h2>      New Arrivals     </h2> 
 		
 			<ul>
-				<li>  <center>  <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </center> </li>
-				<li>  <center> <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </center></li>
-				<li>  <center> <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </center></li>
-				<li>  <center> <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </center></li>
-
-
+				<li>   <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
+				<li>   <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
+				<li>   <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
+				<li>   <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
 
 			</ul>
 
-	</div> <!--new_arrivals -->
+		</div> <!--new_arrivals -->
 
 
 	
 	<!-- columns -->
- 	<div class="below_banner_flex">
+ 	<div class="featured_items_columns">
 
- 	 	<div class="box left">
- 	 		<center>
+ 	 	<div class="box Hairs">
 	 	 		<h3> Human Hair Pieces and Wigs   </h3>
 	 	 		<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\Hair_Wigs.jpg" alt="Hair_Wigs">
-	 	 	</center>
  	 	</div>
- 	 	<div class="box mindle">
- 	 		<center> 
-	 	 		<h3> African print materials and head scarfs </h3>
+ 	 	<div class="box Fabrics">	
+	 	 		<h3> African print Fabrics and head scarfs </h3>
 	 	 		<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\African_materials.jpg" alt="African_materials">
- 	 		</center>
  	 	</div>
- 	 	<div class="box right">
- 	 		<center> 
- 	 			<h3> African Cuisine and Delicacies </h3>
+ 	 	<div class="box Cuisines">	
+ 	 			<h3> African Cuisines and Delicacies </h3>
  	 			<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\shelf_2.jpg"  alt="shelf_2">
- 	 		</center>
-
+ 	 	</div>
+ 	 	<div class="box outfits">
+ 	 			<h3> African Ceremonial outfits </h3>
+ 	 			<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\dakishi_red.jpg"  alt="dakishi_red">
  	 	</div>
 
- 	 	<div class="box right">
- 	 		<center> 
- 	 			<h3> African Cuisine and Delicacies </h3>
- 	 			<img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko.jpg"  alt="Roiko">
- 	 		</center>
- 	 		
- 	 	</div>
-
- 	</div>
+ 	</div><!-- featured_items_columns -->
  </section>
 
  	
