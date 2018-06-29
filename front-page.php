@@ -55,15 +55,6 @@
 
 	</div><!-- featured_items_columns -->
 
-
-
-
-
-
-
-
 </section> <!-- body_section_container -->
 
-
-
-
+<?php get_footer();

@@ -130,11 +130,6 @@ add_action('catalog_odering','woocommerce_catalog_ordering', 30);
 add_action('print_notices','wc_print_notices');
 add_action('page_pagination','woocommerce_pagination', 10);
 
-
-
-
-
-
 //create the below header hook  to replace the woocommerce before shop hook
 
 

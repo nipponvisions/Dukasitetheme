@@ -113,7 +113,3 @@ do_action( 'woocommerce_sidebar' );
 </section><!-- body_section_container -->
 
 <?php get_footer( 'shop' );
-
-
-
-
