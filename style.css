@@ -27,10 +27,6 @@ Description: Powers the Dukasite with some custom divs
 
 	/* #headerimage {   See Header.php template     }*/
 
-.description h3 {
-    color:blue; 
-}   
-
 
 
 
@@ -85,13 +81,10 @@ nav.header_menu ul li{
 
 
 #body_section_container {
-	/*border: 2px solid green;
-	margin-bottom: 0;
+	border: 2px solid green;
+/*	margin-bottom: 0;
 	width: 1024px;
-	padding: 10px;
-
-	*/
-
+	padding: 10px;*/
 }
 
 
@@ -105,8 +98,12 @@ nav.header_menu ul li{
 
 .below_header{
 	border: 2px solid blue;
-	background-color: pink;
+	/*background-color: pink;*/
 }
+
+
+
+
 
 
 .below_header_flex_container{
@@ -207,10 +204,6 @@ ul.page-numbers li{
 }
 
 
-/** TESTING jAVA  **/
-#jambo { color:#F36; 
-		font-weight:bold;
-	}
 
 footer {
 	/*border: 2px solid blue;*/
@@ -504,9 +497,27 @@ form.woocommerce-form.woocommerce-form-login.login{
 
 
 
+
+
+
+
+
+
+.woocommerce-message {
+    border-top-color: #8fae1b;
+    height: 10px;
+    border: 5px solid blue;
+}
+
+
 .test{
 	border: 2px solid blue;
 
 	width: 200px;
 }
 
+
+/** TESTING jAVA  **/
+#jambo { color:#F36; 
+		font-weight:bold;
+	}
