@@ -8,7 +8,7 @@
 ?>
 
  <?php get_header(); ?>
- <div id="notice">  <p> Powered by front-page.php </p>     </div>
+<!--  <div id="notice">  <p> Powered by front-page.php </p>     </div> -->
  <!-- dont insert image here -->
 <!--  <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\Ziggy_Bus_cropped.jpg"> -->
 
@@ -24,7 +24,7 @@
 		<h2>      New Arrivals     </h2> 
 					
 		<ul>
-			<li>   <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
+			<li>   <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\yams_icon.jpg"  alt="Yams_icon"> </li>
 			<li>   <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
 			<li>   <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
 			<li>   <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>

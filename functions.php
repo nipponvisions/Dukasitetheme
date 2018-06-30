@@ -86,9 +86,7 @@ add_action( 'after_setup_theme', 'dukasite_add_woocommerce_support' );
 
 
 
-//  unhook the WooCommerce wrappers
- //remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-//remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
 
 
 // PRODUCT GALLERY 
@@ -115,14 +113,19 @@ add_action('wp_enqueue_scripts', 'add_dukasite_javascripts');
 
 // DUKASITE hOOKS
 
+ // unhook the WooCommerce wrappers
+//  remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+// remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
 
 remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination');
-add_action('dukasite_after_shop_loop', 'woocommerce_pagination');
+// add_action('dukasite_after_shop_loop', 'woocommerce_pagination');
 
 
 remove_action('woocommerce_before_shop_loop', 'wc_print_notices');
 remove_action('woocommerce_before_shop_loop','woocommerce_result_count', 20);
 remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+
 remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
 
 add_action('result_count','woocommerce_result_count', 20);
