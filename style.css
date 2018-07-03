@@ -517,7 +517,8 @@ form.woocommerce-form.woocommerce-form-login.login{
 
     background-color: #8fae1b;
     width: 60%;
-    margin: auto;
+   /* margin: auto;*/
+   float: right;
 }
 
 
