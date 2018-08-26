@@ -24,7 +24,7 @@
 		<h2>      New Arrivals     </h2> 
 					
 		<ul>
-			<li> 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/yams_icon.jpg" alt="" width="100px" height="" >    </li>
+			<li> 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ketepa.jpg" alt="ketepa" width="" height="" >    </li>
 			<li>   <img src="<?php echo  get_stylesheet_directory_uri(); ?>\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
 			<li>   <img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
 			<li>   <img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>

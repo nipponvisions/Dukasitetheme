@@ -501,6 +501,9 @@ form.woocommerce-form.woocommerce-form-login.login{
 
 	.new_arrivals ul li img{
 	width: 50px;
+	vertical-align: middle;
+	justify-center: center;
+	
 
 	}
 
