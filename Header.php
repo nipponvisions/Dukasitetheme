@@ -37,4 +37,4 @@
                     <?php   wp_nav_menu(array('theme-location' =>'header_menu')); ?>
                                        
                 </nav><!--header_menu -->  
-        </div><!--header --> 
+        </div><!--header   added --> 
