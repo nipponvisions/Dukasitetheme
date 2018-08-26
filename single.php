@@ -56,7 +56,7 @@
     </div> <!-- body_section_container -->
 
    
-
+<div class="clearFloat"></div>
  <footer>
  <?php  get_footer(); ?>
  <!--dont close footer -->

@@ -42,7 +42,7 @@ body{
 	border: 2px solid red;
 	max-width:1050px;
 	margin:auto;
-	min-height:100%;
+/*	min-height:100%;*/
 	position: relative;	
 	padding: 2px;
 	width: 100%;
@@ -533,3 +533,8 @@ form.woocommerce-form.woocommerce-form-login.login{
 #jambo { color:#F36; 
 		font-weight:bold;
 	}
+
+
+.clearFloat { 
+	clear: both;
+} 

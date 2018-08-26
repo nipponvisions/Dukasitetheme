@@ -3,7 +3,7 @@
 
 //header image
 $defaults = array(
-	'default-image'          => '',
+	'default-image' => '',
 	'width'                  => 1050,
 	'height'                 => 300,
 	'flex-height'            => false,
@@ -27,9 +27,6 @@ add_theme_support( 'custom-header', $defaults );
  );
  
  // REGISTER SIDEBARS 
-
- 
- 
 // register sidebar ,an area ran inthe admin ready to receive widgets 
 			// https://digwp.com/2010/02/how-to-widgetize-wordpress-theme/
 // if (function_exists('register_sidebar')) {
@@ -122,11 +119,13 @@ remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination');
 // add_action('dukasite_after_shop_loop', 'woocommerce_pagination');
 
 
-remove_action('woocommerce_before_shop_loop', 'wc_print_notices');
-remove_action('woocommerce_before_shop_loop','woocommerce_result_count', 20);
-remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+remove_action('woocommerce_before_shop_loop', 'wc_print_notices', 20);
+remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 20);
+remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination', 20);
+ 
 
-remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination', 10);
+
 
 add_action('result_count','woocommerce_result_count', 20);
 add_action('catalog_odering','woocommerce_catalog_ordering', 30);
@@ -138,15 +137,12 @@ add_action('page_pagination','woocommerce_pagination', 10);
 
 function below_header_hook_markup(){
 	?>
-		            <div class="below_header_flex_container">
-		                <div class="box product-searchform">  <?php  get_template_part('/woocommerce/product-searchform'); ?> </div>
-		                <div class="box result_count">  <?php do_action('result_count');?></div>
-		                <div class="box catalog_odering">  <?php do_action('catalog_odering'); ?> </div>
-   						<div class="box page_pagination">  <?php do_action('page_pagination'); ?> </div>
-		            
-		            </div><!-- below_header_flex_container -->
-
-		
+		<div class="below_header_flex_container">
+		    <div class="box product-searchform">  <?php  get_template_part('/woocommerce/product-searchform'); ?> </div>
+		    <div class="box result_count">  <?php do_action('result_count');?></div>
+		    <div class="box catalog_odering">  <?php do_action('catalog_odering'); ?> </div>
+   			<div class="box page_pagination">  <?php do_action('page_pagination'); ?> </div>          
+		</div><!-- below_header_flex_container -->
 	<?php
 }
 add_action('dukasite_before_shop_loop','below_header_hook_markup');
