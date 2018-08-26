@@ -38,6 +38,31 @@ body{
 	height: 100%;
 }
 
+
+
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+*/
+
+
+
 #main_container {
 	border: 2px solid red;
 	max-width:1050px;
@@ -517,8 +542,44 @@ form.woocommerce-form.woocommerce-form-login.login{
 
     background-color: #8fae1b;
     width: 60%;
-    margin: auto;
+   /* margin: auto;*/
+   float: right;
 }
+
+/* left side widget */
+
+.widget_search{
+	list-style: none;
+}
+
+
+.widget{
+	list-style: none;
+}
+
+		/*.widget_recent_entries{
+			
+			list-style: none;
+		}
+		.widget_recent_entries ul{
+		
+
+		}
+		.widget_recent_entries ul li{
+			list-style: none;;
+		}
+		.widget_recent_comments{
+			list-style: none;
+		}
+		.widget_recent_comments{
+			
+		}
+		.widget_recent_comments ul{
+			
+		}
+		.widget_recent_comments ul li{
+			list-style: none;
+		}*/
 
 
 

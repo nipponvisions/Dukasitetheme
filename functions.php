@@ -65,7 +65,7 @@ if (function_exists('register_sidebar')) {
 
 
 
-// declayer woo commerce support
+// declayer woo commerce support & image sizes 
 function dukasite_add_woocommerce_support() {
 	add_theme_support( 'woocommerce', array(
         // thumbnail_image_width, single_image_width, etc.
@@ -137,12 +137,24 @@ add_action('page_pagination','woocommerce_pagination', 10);
 
 function below_header_hook_markup(){
 	?>
+<<<<<<< HEAD
 		<div class="below_header_flex_container">
 		    <div class="box product-searchform">  <?php  get_template_part('/woocommerce/product-searchform'); ?> </div>
 		    <div class="box result_count">  <?php do_action('result_count');?></div>
 		    <div class="box catalog_odering">  <?php do_action('catalog_odering'); ?> </div>
    			<div class="box page_pagination">  <?php do_action('page_pagination'); ?> </div>          
 		</div><!-- below_header_flex_container -->
+=======
+		            <div class="below_header_flex_container">
+		                <div class="box product-searchform">  <?php  get_template_part('/woocommerce/product-searchform'); ?> </div>
+		                <div class="box result_count">  <?php do_action('result_count');?>   </div>
+		                <div class="box catalog_odering">  <?php do_action('catalog_odering'); ?> </div>
+   						<div class="box page_pagination">  <?php do_action('page_pagination'); ?> </div>
+		            
+		            </div><!-- below_header_flex_container -->
+
+		
+>>>>>>> fdfb4664e975e777e15fe2a9a6a9bff28acf78b9
 	<?php
 }
 add_action('dukasite_before_shop_loop','below_header_hook_markup');
