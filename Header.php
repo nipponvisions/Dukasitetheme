@@ -9,7 +9,7 @@
             <!-- header image  support -->
             <style type="text/css">
                 #headerimage {   
-                    background: url("<?php bloginfo('stylesheet_directory'); ?>/images/salima_header.jpg");    
+                    background: url("<?php bloginfo('stylesheet_directory'); ?>/images/salima_header2.jpg");    
                    /* background-image: url('<?php header_image(); ?>');*/
                     background-repeat: no-repeat;
                 }

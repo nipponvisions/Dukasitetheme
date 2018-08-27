@@ -6,7 +6,7 @@
 
 ?>
 <?php   get_header('shop'); ?>
-<div id="notice"> This is page.php </div>
+<!-- <div id="notice"> This is page.php </div> -->
 
 
             <?php

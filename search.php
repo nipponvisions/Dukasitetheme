@@ -15,7 +15,7 @@
 <!-- http://localhost/DEV/Dukasite\wp-content\themes\dukasitetheme\images\Ziggy_Bus_cropped.jpg -->
 
     <div id="body_section_container"> 
-      <div id="notice"> powered by search.php </div>
+<!--       <div id="notice"> powered by search.php </div> -->
 
             <?php
                         /**

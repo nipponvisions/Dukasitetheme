@@ -8,7 +8,7 @@
 ?>
 
  <?php get_header(); ?>
- <div id="notice">  <p> Powered by dukasite theme <b> index.php </b> </p>     </div>
+<!--  <div id="notice">  <p> Powered by dukasite theme <b> index.php </b> </p>     </div> -->
 
 <!--  	<div id="body_section_container"> 
 

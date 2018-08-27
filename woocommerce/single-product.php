@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
-<div id="notice"> <p> powered by single-product.php </p> </div>
+<!-- <div id="notice"> <p> powered by single-product.php </p> </div> -->
 
 	<?php
 		/**

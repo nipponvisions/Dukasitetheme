@@ -5,8 +5,7 @@
 
 
 ul.products{
-	border: 1px solid blue;
-
+/*	border: 1px solid blue;*/
 	width: 70%;
 /*	width: 100%;*/
 	float: right;
@@ -106,7 +105,7 @@ ul.products li a{
 .onsale{
 	display: block;
 	padding: 2px;
-	background-color: #ff7300;
+	background-color: #f7caa5;
 	width: 50px;
 	text-align: center;
 	font-size: x-large;
@@ -143,14 +142,14 @@ ins{
 
 .add_to_cart_button{
 /*	border: 2px solid blue;*/
-	background-color: yellow;
+
+	background-color: #e2d6be;
 	display: block;
 	padding: 5px;
 	width: 100px;
 	text-align: center;
 
 }
-
 
 .related{
 	/*background-color: white;*/

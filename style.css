@@ -32,7 +32,8 @@ Description: Powers the Dukasite with some custom divs
 html,
 
 body{
-	background-color: #ffcc66c7;
+	background-color: #e3e4e4;
+/*	background-color: #ffcc66c7;*/
 	margin:0;
 	padding:0;
 	height: 100%;
@@ -64,14 +65,18 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 
 #main_container {
-	border: 2px solid red;
+		border: 1px solid white;
+	/*	border: 2px solid red;*/
+	/*	background-color: #FC6;*/
+		background-color: #e3e4e4;
+
 	max-width:1050px;
 	margin:auto;
 /*	min-height:100%;*/
 	position: relative;	
 	padding: 2px;
 	width: 100%;
-	background-color: #FC6;
+
 
 }
 
@@ -85,7 +90,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 nav.header_menu{
-	background-color: #b58e53;
+	background-color: #bdb9b2;
 }
 
 nav.header_menu ul{
@@ -114,7 +119,7 @@ nav.header_menu ul li{
 
 
 #body_section_container {
-	border: 2px solid green;
+	/*border: 2px solid green;*/
 /*	margin-bottom: 0;
 	width: 1024px;
 	padding: 10px;*/
@@ -189,7 +194,9 @@ p.woocommerce-result-count {
 /** below_flexbox_container   **/
 .below_flexbox_container{
 	display: block;
-	border: 2px solid red;
+	/*	border: 2px solid red;*/
+	border: 1px solid white;
+
 	background-color: #999;
 	padding: 10px;
 
@@ -257,8 +264,7 @@ footer {
 
 
 .woocommerce-product-gallery{
-	border: 2px solid green; 
-/*	background-color: purple;*/
+	/*border: 2px solid green; */
 	display: inline-block;
 	width: 35%;
 
@@ -286,7 +292,7 @@ footer {
 }
 
 .flex-active-slide {
-	border: 2px solid red;
+/*	border: 2px solid red;*/
 	margin: 0;
 	padding: 0;
 /*	max-width: 304px;*/
@@ -337,7 +343,7 @@ footer {
 
 .flex-control-nav {
 	/**/
-	background-color: pink;
+	background-color: #d4d1d1;
 	min-height: 110px;
 
 }
@@ -381,7 +387,7 @@ footer {
 
 
 .woocommerce-tabs ul{
-	background-color: gold;
+	background-color: #d4d2c7;
 	display: block;
 
 }
@@ -411,7 +417,8 @@ footer {
 #sidebar{
 	
 /*	border: 1px solid white;*/
-	background-color: #d4a444;
+/*	background-color: #d4a444;*/
+	background-color:#e2d6be;
 	float: left;
 	width: 28%;
 	padding-left: 2px;
