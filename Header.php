@@ -28,7 +28,7 @@
                 <h1>  <a href="<?php bloginfo('url');?>"> <?php bloginfo('name');?> </a> </h1>
         
                     <div class="description">  
-                        <h3> <?php bloginfo('description') ; ?> </h3> 
+                        <h2> <?php bloginfo('description') ; ?> </h2> 
                     </div><!-- description -->
                                  
             </div><!-- headerimage -->

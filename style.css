@@ -82,10 +82,13 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 .description{
 
+text-align: center;
 }
-.description h3{
+.description h2{
 	color: blue;
+
 	margin: 0;
+	padding: 2px;
 
 }
 
@@ -480,16 +483,16 @@ form.woocommerce-form.woocommerce-form-login.login{
 
 .new_arrivals{
 	/*border: 2px solid blue;*/
-	background-color: orange;
+	/*background-color: orange;*/
 }
 	.new_arrivals h2{
 		margin: 0;
 		padding: 0;
 		text-align: center;
-
 	}
+
 	.new_arrivals ul{
-		/*border: 2px solid blue;*/
+		border: 1px solid white;
 		display: flex;
 		flex-direction: row;
 		margin: 0;
@@ -497,7 +500,7 @@ form.woocommerce-form.woocommerce-form-login.login{
 	}
 
 	.new_arrivals ul li{
-		border:1px solid white;
+	/*	border:1px solid white;*/
 		flex-grow:1;
 		list-style: none;
 		margin: 0;
@@ -505,13 +508,15 @@ form.woocommerce-form.woocommerce-form-login.login{
 	}
 
 	.new_arrivals ul li img{
-	width: 50px;
+		width: 50px;
+		display: block;
+		margin: auto;
 	}
 
 
 .featured_items_columns{
 	/*border: 2px solid blue;*/
-	background-color: #ffa576;
+	background-color: #d4c9c3;
 	display: flex;
 	flex-direction: row;
 	
