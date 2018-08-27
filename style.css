@@ -487,7 +487,6 @@ form.woocommerce-form.woocommerce-form-login.login{
 		flex-direction: row;
 		margin: 0;
 		padding: 0;
-
 	}
 
 	.new_arrivals ul li{
@@ -496,15 +495,10 @@ form.woocommerce-form.woocommerce-form-login.login{
 		list-style: none;
 		margin: 0;
 		text-align: center;
-
 	}
 
 	.new_arrivals ul li img{
 	width: 50px;
-	vertical-align: middle;
-	justify-center: center;
-	
-
 	}
 
 
