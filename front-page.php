@@ -37,8 +37,14 @@
 	<div class="featured_items_columns">
 
 		<div class="box Hairs">
- 	 		<h3> Human Hair Pieces and Wigs   </h3>
- 	 		<img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\Hair_Wigs.jpg" alt="Hair_Wigs">
+
+
+
+
+
+ 	 		<a href="http://localhost/DEV/Dukasite/product-category/hairs/"> 	<h3> Human Hair Pieces and Wigs   </h3>
+ 	 		<img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\Hair_Wigs.jpg" alt="Hair_Wigs"> </a>
+ 	 	
  	 	</div>
  	 	<div class="box Fabrics">	
  	 		<h3> African print Fabrics and head scarfs </h3>
@@ -49,8 +55,14 @@
  			<img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\shelf_2.jpg"  alt="shelf_2">
  	 	</div>
  	 	<div class="box outfits">
- 			<h3> African Ceremonial outfits </h3>
- 			<img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\dakishi_red.jpg"  alt="dakishi_red">
+
+
+ 	 		<a href="http://localhost/DEV/Dukasite/product-category/african_outfits/"> 	<h3> African Ceremonial outfits </h3>
+ 	 			<img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\dakishi_red.jpg"  alt="dakishi_red"> </a>
+
+ 	 		
+ 		
+ 		
  	 	</div>
 
 	</div><!-- featured_items_columns -->

@@ -7,10 +7,10 @@
 
 ?>
 
- <?php get_header(); ?>
-<!--  <div id="notice">  <p> Powered by dukasite theme <b> index.php </b> </p>     </div> -->
+  <?php get_header(); ?>
+ <div id="notice">  <p> Powered by dukasite theme <b> index.php </b> </p>     </div> 
 
-<!--  	<div id="body_section_container"> 
+ 	<div id="body_section_container"> 
 
  		<?php
  		if (have_posts()) {
@@ -26,6 +26,7 @@
  		<?php
 
  				the_content() ;
+ 			get_the_category();
 
  		// ---------------------------------------------------------------
 
@@ -39,4 +40,3 @@
  <footer>
  <?php  get_footer(); ?>
  <!--dont close footer -->
- -->

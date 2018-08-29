@@ -114,7 +114,8 @@ ul.products li a{
 /*IMAGE DIMENSIONS IS SET ELSEWHERE */
 
 h2.woocommerce-loop-product__title{
-	    font-weight: 100;
+	    font-weight: 50;
+	     overflow:hidden;
 
 }
 

@@ -371,11 +371,10 @@ footer {
 	opacity: 1;
 }
 
-
 .summary{
-/*	*/
+
 	float: right;
-	width: 30%;
+	width: 40%;
 	clear: none;
 
 	
@@ -538,8 +537,19 @@ form.woocommerce-form.woocommerce-form-login.login{
 }
 
 
+/* button */
+.single_add_to_cart_button{
+	margin-bottom: 10px;
+	background-color: #b6b79a;
+
+}
 
 
+.wc-variation-selection-needed{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #b6b79a;
+}
 
 
 
