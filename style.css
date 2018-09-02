@@ -550,6 +550,25 @@ form.woocommerce-form.woocommerce-form-login.login{
 	background-color: #b6b79a;
 }
 
+table.variations{
+	background-color: #d2cdc3;
+
+}
+.variations tr{
+
+}
+.variations tr td{
+	padding-bottom: 5px;
+
+}
+
+/* shopping cart quantity box */
+.input-text{
+	width: 30px;
+	margin-top: 3px;
+}
+
+
 
 
 
@@ -617,3 +636,4 @@ form.woocommerce-form.woocommerce-form-login.login{
 .clearFloat { 
 	clear: both;
 } 
+
