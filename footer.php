@@ -5,18 +5,13 @@
 
  */
  ?>
-				
-
-
-
 				<footer>
-
 					<center>
 						<h3> Duka theme footer </h3>
-					</center>				
+					</center>
+					<?php wp_footer(); ?> 				
 				</footer>
-			</div> <!-- wrapper --> 
-		<?php wp_footer(); ?> 
+			</div> <!-- wrapper --> 	
 	</body>
 </html>
 

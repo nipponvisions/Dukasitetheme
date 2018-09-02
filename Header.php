@@ -21,7 +21,7 @@
 
 
 <body>
-<div id="main_container"> 
+    <div id="main_container"> 
 
         <div id="header">
            <div id="headerimage">

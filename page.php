@@ -6,7 +6,8 @@
 
 ?>
 <?php   get_header('shop'); ?>
-<!-- <div id="notice"> This is page.php </div> -->
+<div id="body_section_container">
+    <div id="notice"> This is page.php </div>
 
 
             <?php
@@ -52,12 +53,7 @@
 
  <?php  get_sidebar('shop'); ?>  
 
-
-
-
-
-    <div style="clear:both"></div>
-
-
+<div style="clear:both"></div>
+</div><!--body_section_container -->
 <?php get_footer(); ?>
-<!--dont close 
+<!--dont close  footer -->

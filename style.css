@@ -11,24 +11,6 @@ Description: Powers the Dukasite with some custom divs
 
 @import "css/ul_products_style.css"; /* Using a string */
 
-
-/* header_style.css    */
-
-#header{
-  
-    /* height: 310px;  */
-
- /*   background-color: #b59957;*/
-
-}
-#header h1{
-    height: 100px;
-    margin: 0;
-}
-
-
-	/* #headerimage {   See Header.php template     }*/
-
 html,
 
 body{
@@ -38,8 +20,6 @@ body{
 	padding:0;
 	height: 100%;
 }
-
-
 
 
 /*html, body, div, span, applet, object, iframe,
@@ -62,23 +42,36 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 */
 
-
-
 #main_container {
-		border: 1px solid white;
+	min-height:100%;
+	position: relative;	
+	width:1050px;
+	margin:auto;
+	border: 1px solid white;
+
+	background-color: #e3e4e4;
+	padding: 2px;
+	
+	/*	width: 100%;*/
 	/*	border: 2px solid red;*/
 	/*	background-color: #FC6;*/
-		background-color: #e3e4e4;
-
-	max-width:1050px;
-	margin:auto;
-/*	min-height:100%;*/
-	position: relative;	
-	padding: 2px;
-	width: 100%;
 
 
 }
+
+/* header_style.css    */
+
+#header{ 
+	/* height: 310px;  */
+	/*   background-color: #b59957;*/
+}
+
+#header h1{
+    height: 100px;
+    margin: 0;
+}
+
+	/* #headerimage {   See Header.php template     }*/
 
 .description{
 
@@ -120,8 +113,8 @@ nav.header_menu ul li{
  	/* line-height: 34px;  */
  }
 
-
 #body_section_container {
+	   padding-bottom:60px;   /* Height of the footer */
 	/*border: 2px solid green;*/
 /*	margin-bottom: 0;
 	width: 1024px;
@@ -135,17 +128,10 @@ nav.header_menu ul li{
 
 }
 
-
-
 .below_header{
 
 	/*background-color: pink;*/
 }
-
-
-
-
-
 
 .below_header_flex_container{
 	/*border: 2px solid blue ;*/
@@ -247,13 +233,14 @@ ul.page-numbers li{
 
 
 footer {
-	/*border: 2px solid blue;*/
-	/*background:#6cf;*/
-	background-color: #7e7f80;
-	margin-bottom: 0;
-
+	position: absolute;
+	bottom: 0;
 	width:100%;
 	height:60px;   /* Height of the footer */
+	background-color: #7e7f80;
+
+	/*border: 2px solid blue;*/
+	/*background:#6cf;*/
 }
 
 
