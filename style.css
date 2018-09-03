@@ -440,10 +440,13 @@ nav.woocommerce-MyAccount-navigation{
 
  }
 form.woocommerce-form.woocommerce-form-login.login{
+
+	width: 25%;
 	
 }
 .woocommerce form .form-row input.input-text {
-	width: 25%;
+	/* see checkout page */
+/*	width: 25%;*/
 }
 
 /* Front_static_page  */
