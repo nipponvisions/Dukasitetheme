@@ -21,6 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
+    <?php  get_sidebar('top');?>  
 
 <!-- <div id="notice"> <p> powered by single-product.php </p> </div> -->
 
@@ -32,11 +33,7 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_breadcrumb - 20
 		 */
 		do_action( 'woocommerce_before_main_content' );
-
-
-
 	?>
-
 
 	<?php
 		/**
@@ -46,13 +43,6 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
-
-
-
-
-
-
-
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -68,9 +58,6 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
-
-
-<div style ="clear:both"></div>
 
  <?php get_footer( 'shop' ); 
 

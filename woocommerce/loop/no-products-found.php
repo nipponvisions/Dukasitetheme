@@ -21,4 +21,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<p class="woocommerce-info"><?php _e( 'No products were found matching your selection.', 'woocommerce' ); ?></p>
+<div id="notice"> This is powered by  no_product_found.php </div>
+
+	<div class="dukasite_loop">
+
+		<p class="woocommerce-info"><?php _e( 'No products were found matching your selection.', 'woocommerce' ); ?></p>
+
+</div><!-- dukasite_loop -->

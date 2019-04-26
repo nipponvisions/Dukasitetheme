@@ -2,11 +2,14 @@
 <?php
 
 /** Template name :loop.php
-	*Description:  The loop to be executed if whenever there is a post.
-	*This is not a woocommerce template , 
+	*Description:   this is the wordpress loop
+	*its powers all the pages
+	*This is NOT  a woocommerce template ,  
 	*Theme: dukasite
 	*Author: Mathenge 
-**/?>
+**/
+
+?>
 
 <!-- <div class="dukasite_loop"> -->
 	<?php
@@ -28,5 +31,3 @@
 		} //endwhile
 		
 	?>
-
-<!-- </div> dukasite_loop -->

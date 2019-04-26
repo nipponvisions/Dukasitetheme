@@ -1,14 +1,13 @@
 <?php
-// Silence is golden
-// echo "Silence is golden";
+/* Template Name: Sidebar.php
+	Description:  The main Sidebar. Serves as tthe woocommerce shopsidebar
+	theme: dukasite
+	Author: by Moses
+*/
 
 ?>
 
-nothin here 
-
-
-
-	
-		
-
-
+<div class="sidebar">
+	<p> the main sidebar </p>
+	<?php dynamic_sidebar(' Main Shop') ; ?> 
+</div>

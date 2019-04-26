@@ -4,13 +4,11 @@
         <Meta charset="<?php bloginfo( 'charset' );?> " >
         <title><?php wp_title();?></title>
 
-<!-- <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri()?>/css/style.css"> -->
-
             <!-- header image  support -->
             <style type="text/css">
-                #headerimage {   
-                    background: url("<?php bloginfo('stylesheet_directory'); ?>/images/salima_header2.jpg");    
-                   /* background-image: url('<?php header_image(); ?>');*/
+                       #headerimage {   
+                  /*  background: url("<?php bloginfo('stylesheet_directory'); ?>/assets/images/african_shop_header_img.jpg");    */
+                    background-image: url('<?php header_image(); ?>');
                     background-repeat: no-repeat;
                 }
              
@@ -37,4 +35,4 @@
                     <?php   wp_nav_menu(array('theme-location' =>'header_menu')); ?>
                                        
                 </nav><!--header_menu -->  
-        </div><!--header   added --> 
+        </div><!--header -->

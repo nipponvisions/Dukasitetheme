@@ -3,58 +3,72 @@
  // theme: dukasite
  // description: Powers the static front page of the site 
  // used when no any other  specific template is  availlable 
+ 
+ // this is not a woocommerce template but its used as access pont to woocommerce
  // Author Moses
 
 ?>
 
  <?php get_header(); ?>
 <!--  <div id="notice">  <p> Powered by front-page.php </p>     </div> -->
- <!-- dont insert image here -->
-<!--  <img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\Ziggy_Bus_cropped.jpg"> -->
+
 
  <section class="below_header"> 
+
+ 	 <?php get_sidebar('top'); ?> 
+
 		<!--  	src https://codex.wordpress.org/Function_Reference/get_stylesheet_directory_uri -->
-		<div class="banner">  <img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\salima_angle_cropped.jpg"> </div>
+	<div class="banner">  <img src="<?php  echo get_stylesheet_directory_uri(); ?>\assets\images\africanshop_erased.jpg"> </div>
  </section> <!-- below_header -->
 
+<?php
 
-
+?>
 <section id="body_section_container">
 	<div class="new_arrivals"> 
 
-		<h2>      New Arrivals     </h2> 			
+		<h2>  <span>    New Arrivals </span>    </h2> 			
 		<ul>
-			<li> 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ketepa.jpg" alt="ketepa" width="" height="" > </li>
-			<li>   <img src="<?php echo  get_stylesheet_directory_uri(); ?>\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
-			<li>   <img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\Hair_wigs.jpg"  alt="Roiko_icon"> </li>
-			<li>   <img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\roiko_icon.jpg"  alt="Roiko_icon"> </li>
-
+			<li> 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ketepa.jpg" alt="ketepa" ><span> Tea </span> </li>
+			<li>   <img src="<?php echo  get_stylesheet_directory_uri(); ?>/assets/images/roiko_icon.jpg"  alt="Roiko_icon"> <span> Roiko </span> </li>
+			<li>   <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/Hair_wigs.jpg"  alt="Hair_wigs"><span> Wigs </span> </li>
+			<li>   <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/yams_icon.jpg"  alt="yams_icon"> <span> Yams </span></li>
 		</ul>
 
 	</div> <!--new_arrivals -->
 
 	<!-- columns -->
-	<div class="featured_items_columns">
-		<div class="box Hairs">
- 	 		<a href="<?php  echo get_category_link(60); ?> "> 	<h3> Human Hair Pieces and Wigs   </h3>
- 	 		<img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\Hair_Wigs.jpg" alt="Hair_Wigs"> </a>
+	
+<ul class="featured_items_columns">
+		<li class="box Hairs">
+ 	 		 <a href="<?php  echo get_category_link(88); ?> ">  
+ 	 		 
+ 	 			<img src="<?php  echo get_stylesheet_directory_uri(); ?>\assets\images\Hair_Wigs.jpg" alt="Hair_Wigs"> 
+ 	 				<h3> Human Hair Pieces and Wigs   </h3> 
+ 	 		</a>
  	 	
- 	 	</div>
- 	 	<div class="box Fabrics">	
+ 	 	</li>
+ 	 	<li class="box Fabrics">
+ 	 			 <a href="<?php  echo get_category_link(90); ?> ">  	
+ 	 		
+ 	 		<img src="<?php  echo get_stylesheet_directory_uri(); ?>\assets\images\African_materials.jpg" alt="African_materials">
  	 		<h3> African print Fabrics and head scarfs </h3>
- 	 		<img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\African_materials.jpg" alt="African_materials">
- 	 	</div>
- 	 	<div class="box Cuisines">	
- 			<a href="<?php  echo get_category_link(91); ?> "><h3> African Cuisines and Delicacies </h3>
- 			<img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\shelf_2.jpg"  alt="shelf_2"> </a>
- 	 	</div>
+ 	 	</li>
+ 	 	<li class="box Cuisines">	
+ 			<a href="<?php  echo get_category_link(86); ?> ">
+	 			<img src="<?php  echo get_stylesheet_directory_uri(); ?>\assets\images\shelf_2.jpg"  alt="shelf_2"> 
+	 			<h3> African Cuisines and Delicacies </h3>
+ 			</a>
+ 	 	</li>
 
- 	 	<div class="box outfits">
- 	 		<a href="<?php  echo get_category_link(76); ?>"> 	<h3> African Ceremonial outfits </h3>
- 	 			<img src="<?php  echo get_stylesheet_directory_uri(); ?>\images\dakishi_red.jpg"  alt="dakishi_red"> </a>
- 	 	</div>
+ 	 	<li class="box outfits">
+ 	 		<a href="<?php  echo get_category_link(84); ?>"> 
+ 	 			<img src="<?php  echo get_stylesheet_directory_uri(); ?>\assets\images\dakishi_red.jpg"  alt="dakishi_red">
+ 	 				<h3> African Ceremonial outfits </h3>
+ 	 		 </a>
+ 	 	</li>
 
-	</div><!-- featured_items_columns -->
+	</ul><!-- featured_items_columns -->
 
 </section> <!-- body_section_container -->
 

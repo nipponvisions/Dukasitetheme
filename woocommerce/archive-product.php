@@ -21,6 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header( 'shop' ); ?>
 
  <section class="below_header"> 
+    <?php  get_sidebar('top');?>  
         <?php
 
     /**
@@ -65,8 +66,7 @@ if ( woocommerce_product_loop() ) {
             **/
             do_action('dukasite_before_shop_loop');
 ?>
-
- </section> <!-- below_header -->
+</section>
 
 <section id="body_section_container">
 
@@ -108,8 +108,10 @@ if ( woocommerce_product_loop() ) {
      */
     do_action( 'woocommerce_sidebar' );
 
+    // get_sidebar('left');
+
     ?>
     <div style="clear:both"></div>
-</section><!-- body_section_container -->
 
 <?php get_footer( 'shop' );
+

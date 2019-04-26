@@ -1,71 +1,57 @@
 <?php
-    /** Template name: search.php
-        *Description: The template for  displaying  search results
-        Theme: Dukasitetheme
-        *Author Mathenge Moses 
-        * N/B this is not a woocommerce template
-
-    **/
+/** 
+    *Template name: search.php
+    * Description: used to display a visitor’s search results. (not Products)
+    * Theme: Dukasitetheme
+    * Author Mathenge Moses 
+    * N/B this is not a woocommerce template
+    *
+**/
 
 ?>
-<?php   get_header('shop'); ?>
-<!-- dont insert image here -->
-<!-- <img src="<?php  bloginfo('url'); ?>\wp-content\themes\dukasitetheme\images\Ziggy_Bus_cropped.jpg"> -->
-<!-- instead use this link in the wordpree pages editor -->
-<!-- http://localhost/DEV/Dukasite\wp-content\themes\dukasitetheme\images\Ziggy_Bus_cropped.jpg -->
+<?php get_header( 'shop' ); ?>
+     <section class="below_header"> 
+        <div id="notice"> This is search.php </div>
+        
+        <?php get_sidebar('top'); ?> 
 
-    <div id="body_section_container"> 
-<!--       <div id="notice"> powered by search.php </div> -->
+        <?php
+            /**
+            * Hook: woocommerce_before_main_content.
+            *
+            * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+            * @hooked woocommerce_breadcrumb - 20
+            * @hooked WC_Structured_Data::generate_website_data() - 30
+            */
+            do_action( 'woocommerce_before_main_content' );
+
+        ?>
+    </section>
+    <section id="body_section_container">
+
+        <?php
+        if (have_posts()){
+            #
+            ?>
+            <div class="dukasite_loop">
+            <?php get_template_part('loop'); ?>
+            </div>
 
             <?php
-                        /**
-                         * Hook: woocommerce_before_main_content.
-                         *
-                         * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-                         * @hooked woocommerce_breadcrumb - 20
-                         * @hooked WC_Structured_Data::generate_website_data() - 30
-                         */
-                        do_action( 'woocommerce_before_main_content' );
+        }else{
+            #
             ?>
-     
-                <?php
-                /**
-                 * Hook: woocommerce_archive_description.
-                 *
-                 * @hooked woocommerce_taxonomy_archive_description - 10
-                 * @hooked woocommerce_product_archive_description - 10
-                 */
-                 do_action( 'woocommerce_archive_description' );
-                ?>
-          
+            <div class="dukasite_loop">
+        
+         <?php get_template_part('template-parts/content-none'); ?>
+            <!-- get sidebar with a serachfield or  -->
+            <?php get_search_form();  ?>
 
-            
-<?php
-
-        if (have_posts()) {
-            // continue with the rest of the loop
-             get_template_part('loop');
-        } else{
-
-        	echo "Sorry Nothin Matched Your Search";
+            </div>
+            <?php
         }
-       
+
+get_sidebar('shop'); 
+get_footer('shop') ; 
 
 ?>
-
-
-<?php
-// get_sidebar();
-?>
-<?php
-get_sidebar('sitesearch');
-?>
-
-
-
-
-    <div style="clear:both"></div>
-
-
-<?php get_footer(); ?>
-<!--dont close 

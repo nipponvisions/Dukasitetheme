@@ -1,9 +1,5 @@
-
-
-
+/*CSS  */
 /*display horizonataly */
-
-
 ul.products{
 /*	border: 1px solid blue;*/
 	width: 70%;
@@ -12,8 +8,6 @@ ul.products{
 	clear: both;
 	margin: 0;
 	padding: 0;
-
-
 }
 
 ul.products li{
@@ -24,14 +18,9 @@ ul.products li{
 }
 
 ul.products li a{
-
-
 	}
 
 /*	COLUMNS */
-
-
-
 
 .columns-1 li{
 /*	border: 1px solid blue;*/
@@ -43,8 +32,6 @@ ul.products li a{
 	clear: none;
 	text-align: center;	
 }
-
-
 
 
 .columns-2 li{
@@ -59,9 +46,8 @@ ul.products li a{
 }
 
 
-
 .columns-4 {
-
+	
 }
 .columns-4 li{
 /*	border: 1px solid blue;*/
@@ -72,6 +58,7 @@ ul.products li a{
 	margin: 2px;
 	clear: none;
 	text-align: center;	
+	vertical-align: baseline;
 
 }
 
