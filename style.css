@@ -5,10 +5,8 @@ Version: 0.1
 Description: Powers the Dukasite with some custom divs
 */
 
-/* header_style.css    */
 
 
-@import "css/ul_products_style.css"; /* Using a string */
 
 html,
 
@@ -19,27 +17,6 @@ body{
 	padding:0;
 	height: 100%;
 }
-
-
-/*html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
-}
-*/
 
 #main_container {
 	min-height:100%;
@@ -61,8 +38,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 /* header_style.css    */
 
 #header{ 
-	/* height: 310px;  */
-	/*   background-color: #b59957;*/
+	
 }
 
 #header h1{
@@ -70,15 +46,13 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 0;
 }
 
-	/* #headerimage {   See Header.php template     }*/
+/* #headerimage {   See header.php template     }*/
 
 .description{
-
-text-align: center;
+	text-align: center;
 }
 .description h2{
 	color: blue;
-
 	margin: 0;
 	padding: 2px;
 
@@ -114,12 +88,8 @@ nav.header_menu ul li{
 
 #body_section_container {
 	   padding-bottom:60px;   /* Height of the footer */
-	/*border: 2px solid green;*/
-/*	margin-bottom: 0;
-	width: 1024px;
-	padding: 10px;*/
-}
 
+}
 
 .woocommerce-breadcrumb{
 
@@ -127,9 +97,10 @@ nav.header_menu ul li{
 
 }
 
-.below_header{
+section.below_header{
 
 	/*background-color: pink;*/
+	border: 2px solid black;
 }
 
 .below_header_flex_container{
@@ -141,32 +112,68 @@ nav.header_menu ul li{
 
 }
 
+
+
+			/*  XXXXX recently added */
+
+			.widgets{	
+
+			 }	
+
+			 .widget_product_categories{	
+				list-style: none;	
+			}	
+
+			 /*product search form */	
+			li.widget_product_search{	
+				border: 1px solid;	
+				background-color: #545253;	
+				list-style: none;	
+				text-align: center;	
+			}	
+
+			 form.woocommerce-product-search{	
+			}	
+
+			 .search-field{	
+				width: 60%;	
+				height: 50px;	
+				margin: 2px;	
+				border: 1px solid blue;	
+				border-radius: 25px;	
+				font-size: large;	
+			}	
+
+			 .woocommerce-product-search button {	
+				height: 50px;	
+				margin: 2px;	
+				border: 1px solid blue;	
+				 border-radius: 10px;	
+				 font-size: x-large;	
+			}
+
+
+			/* XXXXXX end recently added */
+
 p.woocommerce-result-count {
 	margin: 0;
 }
-
-
 
 .woocommerce-ordering{
 	/*float: right;*/
 
 }
 
-
 .woocommerce-products-header{
 /*	border: 2px solid blue;*/
     background-color: #b599574a;
 }
 
-
-
 .dukasite_loop{
 	/*flex-grow: 3;*/
-	
 	padding-bottom: 10px;
 	float: right;
 	width: 65%;
-
 }
 
 .loop_contents{
@@ -177,38 +184,12 @@ p.woocommerce-result-count {
 
 /*  XXXXXXX   See ul_products_style sheet    XXXXXXX  */
 
-/** below_flexbox_container   **/
-.below_flexbox_container{
-	display: block;
-	/*	border: 2px solid red;*/
-	border: 1px solid white;
-
-	background-color: #999;
-	padding: 10px;
-
-}
-
-.below_flexbox_container p{
-/*	border:1px solid blue;*/
-	display: inline-block;
-
-}
 
 
 nav.woocommerce-pagination{
-
-/*	border: 1px solid blue;*/
-/*	background-color: white;*/
- /*   width: 200px;*/
     float: right;
- /*   height: 40px;*/
-
-/*	border: 1px solid blue;
-	*/
 	margin: 0;
 	padding: 0;
-		
-
 }
 		
 
@@ -229,26 +210,13 @@ ul.page-numbers li{
 
 }
 
-
-
 footer {
 	position: absolute;
 	bottom: 0;
 	width:100%;
 	height:60px;   /* Height of the footer */
 	background-color: #7e7f80;
-
-	/*border: 2px solid blue;*/
-	/*background:#6cf;*/
 }
-
-
-/* store front  css */
-/* WooCommerce 3.0 Gallery */
-/* https://woocommerce.wordpress.com/2017/02/28/adding-support-for-woocommerce-2-7s-new-gallery-feature-to-your-theme/
-*/
-
-
 
 .woocommerce-product-gallery{
 	/*border: 2px solid green; */
@@ -256,10 +224,6 @@ footer {
 	width: 35%;
 
 }
-
-
-
-
 
 .woocommerce-product-gallery--columns-4{
 /*	border:2px solid red;*/
@@ -287,9 +251,6 @@ footer {
 }
 
 
-
-
-
 .flex-viewport{
 
      min-height: 350px; 
@@ -309,12 +270,6 @@ footer {
 	height: 300px;
 
 }
-
-
-
-
-
-
 
 .woocommerce-product-gallery__trigger {
 
@@ -505,8 +460,8 @@ form.woocommerce-form.woocommerce-form-login.login{
 	background-color: #d4c9c3;
 	display: flex;
 	flex-direction: row;
-	
-
+		list-style: none;	
+ 	padding: 0;
 }
 
 
@@ -532,7 +487,6 @@ form.woocommerce-form.woocommerce-form-login.login{
 
 }
 
-
 .wc-variation-selection-needed{
 /*	margin-top: 10px;*/
 	margin-bottom: 10px;
@@ -557,11 +511,6 @@ table.variations{
 	margin-top: 3px;
 }
 
-
-
-
-
-
 .woocommerce-message {
     border-top-color: #8fae1b;
     height: 10px;
@@ -571,40 +520,6 @@ table.variations{
    /* margin: auto;*/
    float: right;
 }
-
-/* left side widget */
-
-.widget_search{
-	list-style: none;
-}
-
-
-.widget{
-	list-style: none;
-}
-
-		/*.widget_recent_entries{
-			
-			list-style: none;
-		}
-		.widget_recent_entries ul{
-		
-		}
-		.widget_recent_entries ul li{
-			list-style: none;;
-		}
-		.widget_recent_comments{
-			list-style: none;
-		}
-		.widget_recent_comments{
-			
-		}
-		.widget_recent_comments ul{
-			
-		}
-		.widget_recent_comments ul li{
-			list-style: none;
-		}*/
 
 
 
