@@ -7,8 +7,6 @@ Description: Powers the Dukasite with some custom divs
 */
 
 
-@import "assets/css/ul_products_style.css"; /* Using a string */
-
 html,
 
 body{
@@ -31,7 +29,6 @@ body{
 
 
 #header{ 
-
 }
 
 
@@ -81,14 +78,12 @@ nav.header_menu ul li{
  }
 
 #body_section_container {
-	   padding-bottom:60px;   /* Height of the footer */
-	
+	padding-bottom:60px;   /* Height of the footer */	
 }
 
 
 .woocommerce-breadcrumb{
 	background-color: white;
-
 }
 
 section.below_header{
@@ -102,7 +97,7 @@ section.below_header{
 	/*	background-color: #999;*/
 	display: flex;
 	flex-direction: row;
-/*	 align-items: baseline;*/
+	/* align-items: baseline;*/
 
 }
 
@@ -202,59 +197,110 @@ footer {
 }
 
 
-.woocommerce-product-gallery{
-	/*border: 2px solid green; */
-	display: inline-block;
-	width: 35%;
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
+/* WooCommerce 3.0 Gallery */
+
+.woocommerce-product-gallery {
+position: relative;
+margin-bottom: 3em
 }
 
-.woocommerce-product-gallery--columns-4{
-/*	border:2px solid red;*/
-	width: 400px; 
-
+.woocommerce-product-gallery figure {
+margin: 0
 }
 
-.woocommerce-product-gallery__wrapper{
-	min-height: 310px;
-
-}
-.woocommerce-product-gallery__image {
-/*	*/
-	/*background-color: white;*/
-	margin: 0;
-	padding-bottom: 0;
+.woocommerce-product-gallery .woocommerce-product-gallery__image:nth-child(n+2) {
+width: 25%;
+display: inline-block
 }
 
-.flex-active-slide {
-/*	border: 2px solid red;*/
-	margin: 0;
-	padding: 0;
-/*	max-width: 304px;*/
-	
+.woocommerce-product-gallery .flex-control-thumbs li {
+list-style: none;
+float: left;
+cursor: pointer
 }
 
-.flex-viewport{
-
-     min-height: 350px; 
+.woocommerce-product-gallery .flex-control-thumbs img {
+opacity: .5
 }
 
-.woocommerce-product-gallery__image a {
-/*	*/
-	/*background-color: white;*/
+.woocommerce-product-gallery .flex-control-thumbs img.flex-active,.woocommerce-product-gallery .flex-control-thumbs img:hover {
+opacity: 1
 }
 
-.woocommerce-product-gallery__image a img{
+.woocommerce-product-gallery img {
+display: block
+}
 
-	width: 300px;
-	height: 300px;
+.woocommerce-product-gallery--columns-3 .flex-control-thumbs li {
+width: 33.3333%
+}
 
+.woocommerce-product-gallery--columns-4 .flex-control-thumbs li {
+width: 25%
+}
+
+.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
+width: 20%
 }
 
 .woocommerce-product-gallery__trigger {
-
+position: absolute;
+top: 1em;
+right: 1em;
+z-index: 99;
 }
 
+a.woocommerce-product-gallery__trigger {
+text-decoration: none;
+}
+
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+position: absolute;
+top: .875em;
+right: .875em;
+display: block;
+height: 2em;
+width: 2em;
+border-radius: 3px;
+z-index: 99;
+text-align: center;
+text-indent: -999px;
+overflow: hidden;
+}
+
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+background-color: #169fda;
+color: #ffffff;
+}
+
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
+background-color: #1781ae;
+border-color: #1781ae;
+color: #ffffff;
+}
+
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:before {
+font: normal normal normal 1em/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+display: block;
+content: "\f00e";
+line-height: 2;
+text-indent: 0;
+}
+
+.woocommerce-product-gallery .flex-control-thumbs li img{
+	width: 100px;
+	height: 100px;
+	
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .summary{
 
@@ -310,6 +356,9 @@ footer {
 	float: right;
 	padding:  0;
 }
+
+
+
 
 /* My account page */
 nav.woocommerce-MyAccount-navigation{

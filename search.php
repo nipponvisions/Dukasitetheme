@@ -26,7 +26,7 @@
             do_action( 'woocommerce_before_main_content' );
 
         ?>
-    </section>
+    </section><!-- below_header -->
     <section id="body_section_container">
 
         <?php
@@ -43,9 +43,9 @@
             ?>
             <div class="dukasite_loop">
         
-         <?php get_template_part('template-parts/content-none'); ?>
-            <!-- get sidebar with a serachfield or  -->
-            <?php get_search_form();  ?>
+         <?php get_template_part('template-parts/post/content-none'); ?>
+            <!-- get sidebar with a searchfield or  -->
+            <?php  get_search_form();  ?>
 
             </div>
             <?php
