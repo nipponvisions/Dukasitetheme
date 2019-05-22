@@ -91,7 +91,7 @@ function add_dukasite_scripts(){
 	wp_enqueue_style('style', get_stylesheet_uri());
 	// wp_enqueue_style( 'header_image_style', get_template_directory_uri().'/assets/css/header_image_style.css');
 	wp_enqueue_style( 'ul_products_style', get_template_directory_uri().'/assets/css/ul_products_style.css');
-	wp_enqueue_script('one_ofthe_scripts', get_template_directory_uri() . '/assets/scripts/one_ofthe_scripts.js', array('jquery'), '1.0.0', false);
+	wp_enqueue_script('one_ofthe_scripts', get_template_directory_uri(). '/assets/scripts/one_ofthe_scripts.js', array('jquery'), '1.0.0', false);
 }
 add_action('wp_enqueue_scripts', 'add_dukasite_scripts');
 
