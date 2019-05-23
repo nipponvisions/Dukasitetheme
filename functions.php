@@ -24,33 +24,37 @@ add_theme_support( 'custom-header', $defaults );
  	'Footer Menu' =>'footer_menu'
  	)
  );
- 
 
+function add_dukasite_scripts(){
+	
+	// register script
+	wp_enqueue_style('style', get_stylesheet_uri());
+	// wp_enqueue_style( 'header_image_style', get_template_directory_uri().'/assets/css/header_image_style.css');
+	wp_enqueue_style( 'ul_products_style', get_template_directory_uri().'/assets/css/ul_products_style.css');
+	wp_enqueue_script('one_ofthe_scripts', get_template_directory_uri(). '/assets/scripts/one_ofthe_scripts.js', array('jquery'), '1.0.0', false);
+}
+add_action('wp_enqueue_scripts', 'add_dukasite_scripts');
 
 
 if (function_exists('register_sidebar')) {
 	# code...
-
 	register_sidebar(
 	  	array('name' => 'Main Left',
 	  		'id'  => 'mainleft',
 	  		'description' => 'this is the left sidebar',
 	  	)
 	);
-
 	register_sidebar(
 	  	array('name' => 'Main Right',
 	  		'id'  => 'mainright',
 	  	)
 	);
-
 	register_sidebar(
 	  	array('name' => 'Main Top',
 	  		'id'  => 'maintop',
 	  		'description'   => 'Houses the product searchform',
 	  	)
 	);
-
 	register_sidebar(
 	  	array('name' => 'Main Shop',
 	  		'id'  => 'mainshop',
@@ -59,8 +63,8 @@ if (function_exists('register_sidebar')) {
 	);
 }
 
-
 // declayer woo commerce support & image sizes 
+//https://docs.woocommerce.com/document/image-sizes-theme-developers/
 function dukasite_add_woocommerce_support() {
 	add_theme_support( 'woocommerce', array(
         // thumbnail_image_width, single_image_width, etc.
@@ -83,17 +87,8 @@ function dukasitetheme_setup() {
     add_theme_support( 'wc-product-gallery-slider' );
 }
 
-// https://www.youtube.com/watch?v=t0swZkgTQnk 
-//  https://developer.wordpress.org/themes/basics/including-css-javascript/
-function add_dukasite_scripts(){
-	// register script
-	// wp_register_script('one_ofthe_scripts', get_template_directory_uri() .'/scripts/one_ofthe_scripts.js');
-	wp_enqueue_style('style', get_stylesheet_uri());
-	// wp_enqueue_style( 'header_image_style', get_template_directory_uri().'/assets/css/header_image_style.css');
-	wp_enqueue_style( 'ul_products_style', get_template_directory_uri().'/assets/css/ul_products_style.css');
-	wp_enqueue_script('one_ofthe_scripts', get_template_directory_uri(). '/assets/scripts/one_ofthe_scripts.js', array('jquery'), '1.0.0', false);
-}
-add_action('wp_enqueue_scripts', 'add_dukasite_scripts');
+
+
 
 
 // DUKASITE hOOKS

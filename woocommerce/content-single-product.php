@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
+<!-- <div id="notice"> powered by template  content-single-product.php </div> -->
 
 <?php
 /**

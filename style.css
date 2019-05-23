@@ -1,7 +1,7 @@
 /*
 Theme name: Dukasitetheme
 Author: Mathenge Moses
-Version: 0.1
+Version: 0.2
 Description: Powers the Dukasite with some custom divs
 */
 
@@ -29,14 +29,11 @@ body{
 	/*	width: 100%;*/
 	/*	border: 2px solid red;*/
 	/*	background-color: #FC6;*/
-
-
 }
 
 /* header_style.css    */
-
 #header{ 
-
+	
 }
 
 #header h1{
@@ -85,16 +82,14 @@ nav.header_menu ul li{
  }
 
 #body_section_container {
-
-	padding-bottom:60px;   /* Height of the footer */	
-}
-
+	   padding-bottom:60px;   /* Height of the footer */
 
 }
 
 .woocommerce-breadcrumb{
 
 	background-color: white;
+
 }
 
 section.below_header{
@@ -108,11 +103,9 @@ section.below_header{
 	/*	background-color: #999;*/
 	display: flex;
 	flex-direction: row;
-	/* align-items: baseline;*/
+/*	 align-items: baseline;*/
 
 }
-
-
 
 			/*  XXXXX recently added */
 
@@ -151,9 +144,8 @@ section.below_header{
 				 border-radius: 10px;	
 				 font-size: x-large;	
 			}
-
-
 			/* XXXXXX end recently added */
+
 
 p.woocommerce-result-count {
 	margin: 0;
@@ -220,30 +212,30 @@ footer {
 
 
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-/* WooCommerce 3.0 Gallery */
-
-.woocommerce-product-gallery{
-	/*border: 2px solid green; */
-	display: inline-block;
-	width: 35%;
-
-}
-
+/** 
+* Xxxxxxxxxxxxx START PRODUCT GALLERY XXXXXXXXXXX 
+* WooCommerce 3.0 Gallery
+* https://woocommerce.wordpress.com/2017/02/28/adding-support-for-woocommerce-2-7s-new-gallery-feature-to-your-theme/
+**/
 
 .woocommerce-product-gallery {
-position: relative;
-margin-bottom: 3em
+	/*border:2px solid red;*/
+	width: 400px;
+	display:inline-block;
+
 }
 
-.woocommerce-product-gallery figure {
-margin: 0
+/*.woocommerce-product-gallery figure {
+margin: 0;
+
+}*/
+.woocommerce-product-gallery__wrapper{
+	
 }
 
 .woocommerce-product-gallery .woocommerce-product-gallery__image:nth-child(n+2) {
-width: 25%;
-display: inline-block
+/*width: 25%;*/
+/*display: inline-block*/
 }
 
 .woocommerce-product-gallery .flex-control-thumbs li {
@@ -253,7 +245,10 @@ cursor: pointer
 }
 
 .woocommerce-product-gallery .flex-control-thumbs img {
-opacity: .5
+opacity: .5;
+width: 80px;
+height: 80px;
+
 }
 
 .woocommerce-product-gallery .flex-control-thumbs img.flex-active,.woocommerce-product-gallery .flex-control-thumbs img:hover {
@@ -261,150 +256,70 @@ opacity: 1
 }
 
 .woocommerce-product-gallery img {
-display: block
-}
-
-.woocommerce-product-gallery--columns-3 .flex-control-thumbs li {
-width: 33.3333%
-}
-
-
-.woocommerce-product-gallery--columns-4 .flex-control-thumbs li {
-width: 25%
-}
-
-
-.flex-viewport{
-}
-
-.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
-width: 20%
-}
-
-
-.woocommerce-product-gallery__trigger {
-position: absolute;
-top: 1em;
-right: 1em;
-z-index: 99;
-
-}
-
-
-.woocommerce-product-gallery__image a {
-/*	*/
-	/*background-color: white;*/
-}
-
-
-a.woocommerce-product-gallery__trigger {
-text-decoration: none;
-}
-
-.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
-position: absolute;
-top: .875em;
-right: .875em;
 display: block;
-height: 2em;
-width: 2em;
-border-radius: 3px;
-z-index: 99;
-text-align: center;
-text-indent: -999px;
-overflow: hidden;
-}
-
-.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
-background-color: #169fda;
-color: #ffffff;
-}
-
-.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
-background-color: #1781ae;
-border-color: #1781ae;
-color: #ffffff;
-}
-
-.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:before {
-font: normal normal normal 1em/1 FontAwesome;
-font-size: inherit;
-text-rendering: auto;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-display: block;
-content: "\f00e";
-line-height: 2;
-text-indent: 0;
+width: 300px;
+height: 300px;
 }
 
 
-.woocommerce-product-gallery .flex-control-thumbs li img{
-	width: 100px;
-	height: 100px;
-	
-}
 
 
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
-.flex-control-thumbs{
-	
-}
-
-.data-thumb-alt{
-
-}
 
 .flex-control-nav {
-	/**/
-	background-color: #d4d1d1;
-	min-height: 110px;
+	 /*   border: 2px solid blue;*/
+    height: 110px;
+    padding-left: 0;
+    background-color: #c9cece;
 
 }
 
+/* Default */
+.woocommerce-product-gallery--columns-4 .flex-control-thumbs li {
+	width: 25%;
 
-.flex-control-nav li{
-	list-style: none;
-	float: left;
-	padding: 2px;
-	opacity: 0.5;
 }
 
- .flex-control-thumbs{
- 
- }
-
-
-
-
-
-.flex-control-nav li:nth-child(1){
-	opacity: 1;
+/*.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
+	width: 20%
 }
+.woocommerce-product-gallery--columns-3 .flex-control-thumbs li {
+	width: 33.3333%;
+	border: 2px solid black;
+}*/
+
+.woocommerce-product-gallery__trigger {
+
+	/*the search glass lens icon */
+	visibility: hidden; 
+
+}
+
+a.woocommerce-product-gallery__trigger {
+	/* link to the full image url */
+}
+
+/* Xxxxxxxxxxxxx END PRODUCT GALLERY XXXXXXXXXXX  */
 
 
 .summary{
-
+/*	border: 2px solid blue;*/
 	float: right;
-	width: 40%;
-	clear: none;
-
-	
+	width: 38%;
+	clear: none;	
 }
 
+.reset_variations{
+	padding-left: 5px;
+	padding-right: 5px;
+}
 
 .woocommerce-tabs {
-
-
     clear: both;
 }
-
 
 .woocommerce-tabs ul{
 	background-color: #d4d2c7;
 	display: block;
-
 }
 
 .woocommerce-tabs ul li{
@@ -419,7 +334,6 @@ text-indent: 0;
 	clear: both;
 }
 
-
 #notice{
 	background-color: red;
 }
@@ -428,23 +342,16 @@ text-indent: 0;
 /*	background-color: white;*/
 }
 
-
 .sidebar{
 	
-/*	border: 1px solid white;*/
-/*	background-color: #d4a444;*/
+	/*	border: 1px solid white;*/
 	background-color:#e2d6be;
 	float: left;
 	width: 28%;
 	padding-left: 2px;
 	padding-right: 2px;
 	clear: none;
-	
-
-
 }
-
-
 
 .product{
 
@@ -455,14 +362,7 @@ text-indent: 0;
 	padding:  0;
 }
 
-
-
-
-
-/* My account page */
-
 /*My account page */
-
 nav.woocommerce-MyAccount-navigation{
 	background-color: pink;
 }
@@ -503,13 +403,18 @@ form.woocommerce-form.woocommerce-form-login.login{
 
 
 .new_arrivals{
-	/*border: 2px solid blue;*/
-	/*background-color: orange;*/
+	background-color: #d4d2c7;
 }
 	.new_arrivals h2{
 		margin: 0;
 		padding: 0;
 		text-align: center;
+		color: red;
+	}
+
+	.new_arrivals h2 span{
+		background-color: #ffff0047;
+
 	}
 
 	.new_arrivals ul{
@@ -533,31 +438,27 @@ form.woocommerce-form.woocommerce-form-login.login{
 		display: block;
 		margin: auto;
 	}
-
-
+	
 .featured_items_columns{
 	/*border: 2px solid blue;*/
 	background-color: #d4c9c3;
 	display: flex;
 	flex-direction: row;
-		list-style: none;	
+	list-style: none;	
  	padding: 0;
 }
-
 
 .box{
 	border: 1px solid white;
 	flex-grow:1;
 	margin: 0;
 	padding: 0;
-	text-align: center;
-	
+	text-align: center;	
 }
 
 .box img{
 	width: 200px; 
 }
-
 
 /* button */
 .single_add_to_cart_button{
@@ -601,16 +502,12 @@ table.variations{
    float: right;
 }
 
-
-
-.test{
-	border: 2px solid blue;
-
-	width: 200px;
-}
-
-
 /** TESTING jAVA  **/
 #jambo { color:#F36; 
 		font-weight:bold;
 	}
+	
+.test{
+	border: 2px solid blue;
+	width: 200px;
+}
