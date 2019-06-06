@@ -27,26 +27,24 @@
     </section><!-- below_header -->
     <section id="body_section_container">
 
-        <?php
-        if (have_posts()){
-            #
-            ?>
-            <div class="dukasite_loop">
-                <?php get_template_part('loop'); ?>
-                <!--  </div> -->
+        <div class="dukasite_loop">
+            <?php
+            if (have_posts()){
 
-                <?php
-                }else{
-                
-    
-                get_template_part('template-parts/post/content-none'); 
-                 // get sidebar with a searchfield or
-                  get_search_form();
-            }
-            ?>
-            </div><!--dukasite_loop -->
+                 get_template_part('loop');
             
-<?php
-get_sidebar('shop'); 
-get_footer('shop') ; 
-?>
+            }else{
+
+
+                get_template_part('template-parts/post/content-none'); 
+                // get sidebar with a searchfield or
+                get_search_form();
+            }
+        
+        ?>
+        </div>
+
+        <?php
+     get_sidebar();
+        get_footer() ; 
+        ?>

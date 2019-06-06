@@ -14,18 +14,14 @@
  * @package WooCommerce/Templates
  * @version 3.4.0
  */
-
 defined( 'ABSPATH' ) || exit;
-
 get_header( 'shop' );
-
 ?>
-<div id="notice"> Powered by archives.php </div>
+<div id="notice"> Powered by archive-product.php </div>
 
  <section class="below_header"> 
     <?php  get_sidebar('top');?>  
         <?php
-
     /**
      * Hook: woocommerce_before_main_content.
      *
@@ -34,7 +30,6 @@ get_header( 'shop' );
      * @hooked WC_Structured_Data::generate_website_data() - 30
      */
      do_action( 'woocommerce_before_main_content' );
-
     ?>
     <header class="woocommerce-products-header">
         <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
@@ -50,12 +45,15 @@ get_header( 'shop' );
          */
          //do_action( 'woocommerce_archive_description' );
         ?>
-    </header>
+    </header><!--woocommerce-products-header -->
+    </section>
+
+    <section id="body_section_container">
+
 
 
  <?php
 if ( woocommerce_product_loop() ) {
-
            /**
                 *Hook: dukasite_before_shop_loop
                 *
@@ -67,32 +65,22 @@ if ( woocommerce_product_loop() ) {
                 *  custom markup  
             **/
              do_action('dukasite_before_shop_loop');
-?>
-</section>
 
-<section id="body_section_container">
-
-    <?php
-
+             
          woocommerce_product_loop_start();
-
         if ( wc_get_loop_prop( 'total' ) ) {
             while ( have_posts() ) {
                 the_post();
-
                 /**
                  * Hook: woocommerce_shop_loop.
                  *
                  * @hooked WC_Structured_Data::generate_product_data() - 10
                  */
                   do_action( 'woocommerce_shop_loop' );
-
                   wc_get_template_part( 'content', 'product' );
             }
         }
-
          woocommerce_product_loop_end();
-
      
     } else {
         /**
@@ -102,18 +90,13 @@ if ( woocommerce_product_loop() ) {
          */
         do_action( 'woocommerce_no_products_found' );
     }
-
     /**
      * Hook: woocommerce_sidebar.
      *
      * @hooked woocommerce_get_sidebar - 10
      */
      do_action( 'woocommerce_sidebar' );
-
      // get_sidebar('left');
-
     ?>
-<!--     <div style="clear:both"></div>
- -->
-<?php get_footer( 'shop' );
 
+<?php get_footer( 'shop' );

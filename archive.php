@@ -5,8 +5,6 @@ description:  used to display the  POSTS LIST
 author : Mathenge Moses
 theme: dukasitetheme
 https://codex.wordpress.org/Template_Tags/wp_get_archives
-
-
 */
 ?>
 
