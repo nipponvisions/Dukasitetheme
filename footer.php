@@ -7,7 +7,8 @@
  ?>
 
                 <div style="clear:both"></div>
-            </section><!--body_section_container -->
+                
+            </section> <!--body_section_container -->
 
             <footer>
                 <center>

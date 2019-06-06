@@ -7,7 +7,6 @@
     * N/B this is not a woocommerce template
     *
 **/
-
 ?>
 <?php get_header( 'shop' ); ?>
      <section class="below_header"> 
@@ -24,7 +23,6 @@
             * @hooked WC_Structured_Data::generate_website_data() - 30
             */
             do_action( 'woocommerce_before_main_content' );
-
         ?>
     </section><!-- below_header -->
     <section id="body_section_container">
@@ -34,24 +32,21 @@
             #
             ?>
             <div class="dukasite_loop">
-            <?php get_template_part('loop'); ?>
-            </div>
+                <?php get_template_part('loop'); ?>
+                <!--  </div> -->
 
-            <?php
-        }else{
-            #
+                <?php
+                }else{
+                
+    
+                get_template_part('template-parts/post/content-none'); 
+                 // get sidebar with a searchfield or
+                  get_search_form();
+            }
             ?>
-            <div class="dukasite_loop">
-        
-         <?php get_template_part('template-parts/post/content-none'); ?>
-            <!-- get sidebar with a searchfield or  -->
-            <?php  get_search_form();  ?>
-
-            </div>
-            <?php
-        }
-
+            </div><!--dukasite_loop -->
+            
+<?php
 get_sidebar('shop'); 
 get_footer('shop') ; 
-
 ?>

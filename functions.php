@@ -130,3 +130,4 @@ function below_header_hook_markup(){
 	<?php
 }
 add_action('dukasite_before_shop_loop','below_header_hook_markup');
+

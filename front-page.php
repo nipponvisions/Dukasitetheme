@@ -29,9 +29,22 @@
 
 		<h2>  <span>    New Arrivals </span>    </h2> 			
 		<ul>
-			<li> 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ketepa.jpg" alt="ketepa" ><span> Tea </span> </li>
-			<li>   <img src="<?php echo  get_stylesheet_directory_uri(); ?>/assets/images/roiko_icon.jpg"  alt="Roiko_icon"> <span> Roiko </span> </li>
-			<li>   <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/Hair_wigs.jpg"  alt="Hair_wigs"><span> Wigs </span> </li>
+			<!-- NB NOTE THE DIFFERENCE BETWEEN GET PAGE LINK NAD GET CATEGORY LINK FOR GROUPED ITEMS -->
+			<li>
+				<a href="<?php  echo get_page_link(269); ?> ">
+					<img src="<?php  echo get_stylesheet_directory_uri(); ?>\assets\images\ketepa.jpg" alt="Hair_Wigs"><span> Tea  </span> 
+ 	 			</a>  
+ 	 		</li>
+			<li>
+				<a href="<?php  echo get_page_link(272); ?> ">
+				   <img src="<?php echo  get_stylesheet_directory_uri(); ?>/assets/images/roiko_icon.jpg"  alt="Roiko_icon"> <span> Roiko </span> 
+				 </a>
+			</li>
+			<li>
+				<a href="<?php   echo get_category_link(60); ?> ">
+					<img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/Hair_wigs.jpg"  alt="Hair_wigs"><span> Wigs </span>
+				</a>
+			 </li>
 			<li>   <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/yams_icon.jpg"  alt="yams_icon"> <span> Yams </span></li>
 		</ul>
 
@@ -41,12 +54,10 @@
 	
 <ul class="featured_items_columns">
 		<li class="box Hairs">
- 	 		 <a href="<?php  echo get_category_link(88); ?> ">  
- 	 		 
+			<a href="<?php  echo get_category_link(88); ?> ">  
  	 			<img src="<?php  echo get_stylesheet_directory_uri(); ?>\assets\images\Hair_Wigs.jpg" alt="Hair_Wigs"> 
  	 				<h3> Human Hair Pieces and Wigs   </h3> 
  	 		</a>
- 	 	
  	 	</li>
  	 	<li class="box Fabrics">
  	 			 <a href="<?php  echo get_category_link(90); ?> ">  	

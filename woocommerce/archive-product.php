@@ -20,6 +20,7 @@ defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
 
 ?>
+<div id="notice"> Powered by archives.php </div>
 
  <section class="below_header"> 
     <?php  get_sidebar('top');?>  
@@ -65,7 +66,7 @@ if ( woocommerce_product_loop() ) {
                 *@hooked woocommerce_pagination', 10);
                 *  custom markup  
             **/
-            do_action('dukasite_before_shop_loop');
+             do_action('dukasite_before_shop_loop');
 ?>
 </section>
 
@@ -107,12 +108,12 @@ if ( woocommerce_product_loop() ) {
      *
      * @hooked woocommerce_get_sidebar - 10
      */
-    do_action( 'woocommerce_sidebar' );
+     do_action( 'woocommerce_sidebar' );
 
-    // get_sidebar('left');
+     // get_sidebar('left');
 
     ?>
-    <div style="clear:both"></div>
-
+<!--     <div style="clear:both"></div>
+ -->
 <?php get_footer( 'shop' );
 

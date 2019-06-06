@@ -262,9 +262,6 @@ height: 300px;
 }
 
 
-
-
-
 .flex-control-nav {
 	 /*   border: 2px solid blue;*/
     height: 110px;
@@ -350,6 +347,7 @@ a.woocommerce-product-gallery__trigger {
 	width: 28%;
 	padding-left: 2px;
 	padding-right: 2px;
+	padding-bottom: 4px;
 	clear: none;
 }
 
@@ -419,11 +417,14 @@ form.woocommerce-form.woocommerce-form-login.login{
 
 	.new_arrivals ul{
 		border: 1px solid white;
+		background-color: #e7f1b0;
 		display: flex;
 		flex-direction: row;
 		margin: 0;
-		padding: 0;
+		padding-top: 4px;
+		padding-bottom: 4px;
 	}
+
 
 	.new_arrivals ul li{
 	/*	border:1px solid white;*/
