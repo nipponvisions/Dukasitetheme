@@ -7,8 +7,11 @@
     * N/B this is not a woocommerce template
     *
 **/
-?>
-<?php get_header( 'shop' ); ?>
+
+
+
+get_header( 'shop' );
+ ?>
      <section class="below_header"> 
         <div id="notice"> This is search.php </div>
         

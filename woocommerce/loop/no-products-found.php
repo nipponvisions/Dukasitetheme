@@ -25,6 +25,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="dukasite_loop">
 		<div id="notice"> This is powered by  no_product_found.php Template </div>
 
-		<p class="woocommerce-info"><?php _e( 'No products were found matching your selection.', 'woocommerce' ); ?></p>
+		<p class="woocommerce-info"><?php _e( 'No products were found matching your selection try Searching with different key words.', 'woocommerce' ); ?></p>
+	
+		 <!--  get sidebar with a searchfield or -->
+               <?php  get_search_form();  ?>
 
 	</div> <!--  dukasite_loop  -->

@@ -59,6 +59,7 @@ ul.products li a{
 	clear: none;
 	text-align: center;	
 	vertical-align: baseline;
+	padding-top: 10px;
 
 }
 
@@ -96,6 +97,7 @@ ul.products li a{
 	width: 50px;
 	text-align: center;
 	font-size: x-large;
+	position: absolute;
 }
 
 /*IMAGE DIMENSIONS IS SET ELSEWHERE */

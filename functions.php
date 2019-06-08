@@ -87,10 +87,6 @@ function dukasitetheme_setup() {
     add_theme_support( 'wc-product-gallery-slider' );
 }
 
-
-
-
-
 // DUKASITE hOOKS
 
  // unhook the WooCommerce wrappers
@@ -130,4 +126,19 @@ function below_header_hook_markup(){
 	<?php
 }
 add_action('dukasite_before_shop_loop','below_header_hook_markup');
+
+
+
+/*
+ * Add Revision support to WooCommerce Products
+ * 
+ */
+
+add_filter( 'woocommerce_register_post_type_product', 'dukasitetheme_revision_support' );
+
+function dukasitetheme_revision_support( $args ) {
+     $args['supports'][] = 'revisions';
+
+     return $args;
+}
 
