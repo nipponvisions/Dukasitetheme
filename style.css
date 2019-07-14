@@ -8,6 +8,11 @@ Description: Powers the Dukasite with some custom divs
 
 html,
 
+/*ul, li{
+	margin: 0;
+	padding:0;
+}*/
+
 body{
 	background-color: #e3e4e4;
 /*	background-color: #ffcc66c7;*/
@@ -24,7 +29,7 @@ body{
 	border: 1px solid white;
 
 	background-color: #e3e4e4;
-	padding: 2px;
+	padding: 2px,2px,2px,70px;
 	
 	/*	width: 100%;*/
 	/*	border: 2px solid red;*/
@@ -82,7 +87,8 @@ nav.header_menu ul li{
  }
 
 #body_section_container {
-	   padding-bottom:60px;   /* Height of the footer */
+	   padding-bottom: 70px;   /* Height of the footer */
+	 /*  border: 2px solid red;*/
 
 }
 
@@ -96,6 +102,11 @@ section.below_header{
 
 	/*background-color: pink;*/
 	border: 2px solid black;
+}
+
+.below_header ul{
+	margin: 0;
+	padding: 0;
 }
 
 .below_header_flex_container{
@@ -208,6 +219,11 @@ footer {
 	width:100%;
 	height:60px;   /* Height of the footer */
 	background-color: #7e7f80;
+	border: 2px solid blue;
+}
+
+footer h3{
+	text-align: center;
 }
 
 

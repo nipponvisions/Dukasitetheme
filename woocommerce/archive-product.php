@@ -17,10 +17,14 @@
 defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
 ?>
-<div id="notice"> Powered by archive-product.php </div>
+<!-- <div id="notice"> Powered by archive-product.php </div> -->
 
- <section class="below_header"> 
-    <?php  get_sidebar('top');?>  
+<section class="below_header"> 
+        <?php  get_sidebar('top');?>  
+
+
+
+    
         <?php
     /**
      * Hook: woocommerce_before_main_content.
@@ -46,7 +50,9 @@ get_header( 'shop' );
          //do_action( 'woocommerce_archive_description' );
         ?>
     </header><!--woocommerce-products-header -->
-    </section>
+
+
+ </section>
 
     <section id="body_section_container">
 

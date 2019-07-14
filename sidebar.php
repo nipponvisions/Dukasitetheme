@@ -8,7 +8,9 @@
 ?>
 
 <div class="sidebar">
-	<p> the main sidebar </p>
-	<?php dynamic_sidebar(' Main Shop') ; ?> 
+	<p> The main sidebar </p>
+	<ul>
+		<?php dynamic_sidebar(' Main Shop') ; ?> 
+	</ul>
 	
 </div>

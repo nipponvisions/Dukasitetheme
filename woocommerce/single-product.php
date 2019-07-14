@@ -21,9 +21,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
-    <?php  get_sidebar('top');?>  
+<ul>
+	    <?php  get_sidebar('top');?>  
 
-<!-- <div id="notice"> <p> powered by single-product.php </p> </div> -->
+</ul>
+
+<!--  <div id="notice"> <p> powered by single-product.php </p> </div> -->
+ <section id="body_section_container">
+
 
 	<?php
 		/**
@@ -59,6 +64,6 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
- <?php get_footer( 'shop' ); 
+ <?php  get_footer( 'shop' ); 
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

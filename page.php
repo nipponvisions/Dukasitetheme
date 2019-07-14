@@ -1,13 +1,11 @@
 <?php
 /** 
     * Template name: page.php
-    * Description: the background  Template For  All Pages including woccommerce 
+    * Description: the background  Template For  All Pages including 
     * N/B this is not a woocommerce template
     * Theme: Dukasitetheme
     * Author: Mathenge Moses
 **/
-
-
 get_header( 'shop' ); ?>
      <section class="below_header"> 
         <div id="notice"> This is page.php </div>
@@ -23,7 +21,6 @@ get_header( 'shop' ); ?>
             * @hooked WC_Structured_Data::generate_website_data() - 30
             */
             do_action( 'woocommerce_before_main_content' );
-
         ?>
     </section>
     <section id="body_section_container">
@@ -39,12 +36,10 @@ get_header( 'shop' ); ?>
         ?>
 
         <?php
-
         if (have_posts()){
             ?>
             <div class="dukasite_loop">
                 <?php
-
                 # Continue with the rest of the loop
                  get_template_part('loop');
             ?>
@@ -55,5 +50,3 @@ get_header( 'shop' ); ?>
         
         get_sidebar('shop'); 
         get_footer('shop') ; 
-
-        ?>

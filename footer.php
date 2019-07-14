@@ -6,17 +6,20 @@
  */
  ?>
 
-                <div style="clear:both"></div>
+
+
+
+            <div style="clear:both"></div>
                 
             </section> <!--body_section_container -->
 
             <footer>
-                <center>
+  
                 <h3> Duka theme footer </h3>
-                </center>
+
                 <?php wp_footer(); ?>               
             </footer>
-      
+        </div><!--main_container-->
     </body>
 </html>
 

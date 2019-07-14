@@ -4,15 +4,15 @@
         <Meta charset="<?php bloginfo( 'charset' );?> " >
         <title><?php wp_title();?></title>
 
-            <!-- header image  support -->
-            <style type="text/css">
-                       #headerimage {   
-                  /*  background: url("<?php bloginfo('stylesheet_directory'); ?>/assets/images/african_shop_header_img.jpg");    */
-                    background-image: url('<?php header_image(); ?>');
-                    background-repeat: no-repeat;
-                }
-             
-            </style>
+        <!-- header image  support -->
+        <style>
+            #headerimage {   
+                /*  background: url("<?php bloginfo('stylesheet_directory'); ?>/assets/images/african_shop_header_img.jpg");    */
+                background-image: url('<?php header_image(); ?>');
+                background-repeat: no-repeat;
+            }
+
+        </style>
 
         <?php wp_head(); ?>     
     </head>
@@ -36,3 +36,7 @@
                                        
                 </nav><!--header_menu -->  
         </div><!--header -->
+
+
+
+    
