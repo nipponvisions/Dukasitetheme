@@ -8,7 +8,8 @@
 
 ?>
 
-
-	 <!--  <?php get_template_part('/woocommerce/product-searchform'); ?> -->
-
+<ul>
+	<!--  <?php get_template_part('/woocommerce/product-searchform'); ?> -->
 	<?php dynamic_sidebar('Main Top') ; ?> 
+</ul>
+

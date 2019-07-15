@@ -3,25 +3,20 @@
         *Description: The template for powering the My acount page
         *Author Mathenge Moses 
         * N/B this is not a woocommerce template
-
     **/
-
 ?>
-<?php   get_header('shop'); ?>
+<?php get_header('shop'); ?>
 
- 
-<div id="body_section_container"> 
-    <div id="notice"> powered by account.php </div>
+    <section id="body_section_container"> 
+        <div id="notice"> powered by account.php </div>
 
-    <?php
-    if (have_posts()) {
-    # code...
+        <?php
+            if (have_posts()) {
+                # code...
+                get_template_part('loop');
 
-    get_template_part('loop');
+            }// end iff
 
-    }// end iff
-
-    ?>
-<?php  get_footer(); ?>
-
- 
+            
+             get_footer();
+         ?>

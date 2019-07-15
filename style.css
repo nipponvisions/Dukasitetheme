@@ -85,23 +85,17 @@ nav.header_menu ul li{
  nav.header_menu ul li a{
  	/* line-height: 34px;  */
  }
-
-#body_section_container {
+section#body_section_container {
 	   padding-bottom: 70px;   /* Height of the footer */
 	 /*  border: 2px solid red;*/
-
 }
 
 .woocommerce-breadcrumb{
-
-	background-color: white;
-
+	/*background-color: white;  */
 }
 
 section.below_header{
-
-	/*background-color: pink;*/
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 }
 
 .below_header ul{
@@ -118,44 +112,53 @@ section.below_header{
 
 }
 
-			/*  XXXXX recently added */
+/*  XXXXX recently added */
 
-			.widgets{	
+.widgets{	
 
-			 }	
+ }	
 
-			 .widget_product_categories{	
-				list-style: none;	
-			}	
+ .widget_product_categories{	
+	list-style: none;	
+}	
 
-			 /*product search form */	
-			li.widget_product_search{	
-				border: 1px solid;	
-				background-color: #545253;	
-				list-style: none;	
-				text-align: center;	
-			}	
+ /*product search form */	
+li.widget_product_search{	
+	border: 1px solid;	
+	background-color: #545253;	
+	list-style: none;	
+	text-align: center;	
+}	
 
-			 form.woocommerce-product-search{	
-			}	
+ form.woocommerce-product-search{	
+}	
 
-			 .search-field{	
-				width: 60%;	
-				height: 50px;	
-				margin: 2px;	
-				border: 1px solid blue;	
-				border-radius: 25px;	
-				font-size: large;	
-			}	
 
-			 .woocommerce-product-search button {	
-				height: 50px;	
-				margin: 2px;	
-				border: 1px solid blue;	
-				 border-radius: 10px;	
-				 font-size: x-large;	
-			}
-			/* XXXXXX end recently added */
+/* seearch field in left sidebar  */
+
+li#search-7{
+	margin-top:10px;
+	list-style:none;	
+}
+
+
+ .search-field{	
+	width: 60%;	
+	height: 50px;	
+	margin: 2px;	
+	border: 1px solid blue;	
+	border-radius: 25px;	
+	font-size: large;	
+}	
+
+ .woocommerce-product-search button {	
+	height: 50px;	
+	margin: 2px;	
+	border: 1px solid blue;	
+	 border-radius: 10px;	
+	 font-size: x-large;	
+}
+/* XXXXXX end recently added */
 
 
 p.woocommerce-result-count {

@@ -19,51 +19,47 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
+get_header('shop'); ?>
 
-get_header( 'shop' ); ?>
-<ul>
-	    <?php  get_sidebar('top');?>  
+	<section class="below_header"> 
+	<!-- 	<div id="notice"> <p> powered by single-product.php </p> </div> -->
+		
+		<?php
+			get_sidebar('top'); 
 
-</ul>
+			/**
+			* woocommerce_before_main_content hook.
+			*
+			* @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+			* @hooked woocommerce_breadcrumb - 20
+			*/
+			do_action( 'woocommerce_before_main_content' );
+		?>
+	</section><!--below_header -->
 
-<!--  <div id="notice"> <p> powered by single-product.php </p> </div> -->
- <section id="body_section_container">
+	<section id="body_section_container">
+		<?php
+			/**
+			* woocommerce_sidebar hook.
+			*
+			* @hooked woocommerce_get_sidebar - 10
+			*/
+			do_action( 'woocommerce_sidebar' );
 
 
-	<?php
-		/**
-		 * woocommerce_before_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
+			while ( have_posts() ) : the_post(); 
 
-	<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
+				wc_get_template_part( 'content', 'single-product' ); 
 
-		<?php while ( have_posts() ) : the_post(); ?>
+			endwhile; // end of the loop. 
 
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
-
-		<?php endwhile; // end of the loop. ?>
-
-	<?php
-		/**
-		 * woocommerce_after_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-		 */
-		do_action( 'woocommerce_after_main_content' );
-	?>
-
- <?php  get_footer( 'shop' ); 
-
-/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
+		
+			/**
+			* woocommerce_after_main_content hook.
+			*
+			* @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+			*/
+			// do_action( 'woocommerce_after_main_content' );
+			
+			 get_footer( 'shop' ); 
+			/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

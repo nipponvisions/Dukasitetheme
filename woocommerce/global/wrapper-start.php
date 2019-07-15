@@ -47,6 +47,6 @@ switch ( $template ) {
 	
 	default :
 		//disabled to allow markup validation -  i used custom DIVs
-		echo '<div id="primary" class="content-area"><main id="main" class="site-main" role="main">';
+		// echo '<div id="primary" class="content-area"><main id="main" class="site-main" role="main">';
 		break;
 }

@@ -13,4 +13,4 @@
 		<?php dynamic_sidebar(' Main Shop') ; ?> 
 	</ul>
 	
-</div>
+</div><!--sidebar -->

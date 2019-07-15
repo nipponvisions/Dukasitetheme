@@ -22,7 +22,7 @@ get_header( 'shop' ); ?>
             */
             do_action( 'woocommerce_before_main_content' );
         ?>
-    </section>
+    </section><!--below_header -->
     <section id="body_section_container">
 
         <?php
