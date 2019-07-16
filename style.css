@@ -136,7 +136,7 @@ li.widget_product_search{
 
 /* seearch field in left sidebar  */
 
-li#search-7{
+.widget_search{
 	margin-top:10px;
 	list-style:none;	
 }
