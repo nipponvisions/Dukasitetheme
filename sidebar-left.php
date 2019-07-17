@@ -4,12 +4,11 @@
 	theme: dukasite
 	Author: by Moses
 */
-
 ?>
 
 <div id="left_sidebar">
 	<p> This is  the left sidebar </p>
-
-		<?php  dynamic_sidebar(' shop'); ?>
-		
+		<ul>
+			<?php  dynamic_sidebar(' shop'); ?>
+		</ul>		
 </div>  <!-- close sidebar --> 

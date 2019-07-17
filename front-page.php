@@ -8,19 +8,15 @@
  // Author Moses
 
 ?>
-
- <?php get_header(); ?>
+<?php get_header(); ?>
 <!--  <div id="notice">  <p> Powered by front-page.php </p>     </div> -->
 
 
  <section class="below_header"> 
- 	<ul>
+
  	 <?php get_sidebar('top'); ?> 
- 	</ul>
 
-
-
-		<!--  	src https://codex.wordpress.org/Function_Reference/get_stylesheet_directory_uri -->
+	<!--  	src https://codex.wordpress.org/Function_Reference/get_stylesheet_directory_uri -->
 	<div class="banner">
 	  <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/africanshop_erased.jpg" alt="africanshop_erased"> 
 	</div>
@@ -84,9 +80,5 @@
  	 				<h3> African Ceremonial outfits </h3>
  	 		 </a>
  	 	</li>
-
-	</ul><!-- featured_items_columns -->
-
-
-
+	</ul><!-- featured_items_columns -
 <?php get_footer();
