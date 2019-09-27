@@ -11,12 +11,10 @@
                 background-image: url('<?php header_image(); ?>');
                 background-repeat: no-repeat;
             }
-
         </style>
 
         <?php wp_head(); ?>     
     </head>
-
 
     <body>
         <div id="main_container"> 
