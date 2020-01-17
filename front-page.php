@@ -4,7 +4,7 @@
  // description: Powers the static front page of the site 
  // used when no any other  specific template is  availlable 
  
- // this is not a woocommerce template but its used as access pont to woocommerce
+ // this is not a woocommerce template but its used as access point to woocommerce
  // Author Moses
 
 ?>
@@ -18,8 +18,8 @@
 
 	<!--  	src https://codex.wordpress.org/Function_Reference/get_stylesheet_directory_uri -->
 	<div class="banner">
-	<!--   <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/africanshop_erased.jpg" alt="africanshop_erased">  -->
-	<img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/A&R_banner.jpg" alt="africanshop_erased"> 
+	<!--   <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/A_R_bannerA_R_banner.jpg" alt="A_R_banner">  -->
+	<img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/A_R_banner.jpg" alt="A_R_banner"> 
 	</div>
  </section> <!-- below_header -->
 

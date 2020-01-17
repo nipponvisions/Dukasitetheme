@@ -3,7 +3,7 @@
 
 /** Template name :loop.php
 	*Description:   this is the wordpress loop
-	*its powers all the pages
+	*it powers all the pages
 	*This is NOT  a woocommerce template ,  
 	*Theme: dukasite
 	*Author: Mathenge 

@@ -1,23 +1,26 @@
 <?php
 /* template name: footer.php
+
     *theme: dukatheme 
-    *author: Mahtenge moses
+    *description: the footer section 
+    *author: Mathenge Moses
 
  */
  ?>
-
-
-
-
-            <div style="clear:both"></div>
-                
+                <div style="clear:both"></div>  
             </section> <!--body_section_container -->
 
             <footer>  
                 <div class="footer_flex_container">
                     <div class= "footer_flex">
                         <h5>Jump To: </h5>
-                        <ul class="jump_to">
+                        
+
+                            <!--  Quick Links  -->
+                            <?php  wp_list_pages() ; ?>
+                
+
+                <!-- <ul>
                             <li> Home </li>
                             <li> About Us</li>
                             <li> Services  </li>
@@ -37,25 +40,18 @@
                                 <li> About Us</li>
                                 <li> Services  </li>
                                 <li> Training</li>
-                                <li> Contact Us </li>
-
+                                <li> Contact Us </li> 
                         </ul>
+                    -->
 
-
+                   
 
                     </div>
 
                     <div class ="footer_flex">
-                        <h5>Follow Us on: </h5>
-                        <ul class="social_media">
-                            <li> <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/social_media/facebook_logo.png" alt="facebook_logo"> </li>
-                            <li> <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/social_media/Instagram.png" alt="Instagram"> </li>
-                            <li> <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/social_media/Twitter_Logo_WhiteOnBlue.png" alt="Twitter_Logo_WhiteOnBlue"></li>
-                            <li> <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/social_media/yt_icon_rgb.png" alt="yt_icon_rgb"> </li>
-                            <li> <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/social_media/Instagram_AppIcon_Aug2017.png" alt="Instagram_AppIcon_Aug2017"> </li>
-                            <li> <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/social_media/Mail_icon.png" alt="Mail_icon"> </li>
-                        </ul>
-
+                        <!--social media -->
+                        <?php get_template_part('template-parts/footer/socialmedia','footer'); ?>
+             
                     </div>
                     <div class="footer_flex"> 
                         <h5> Site Designed and Maintained BY: </h5>
@@ -80,8 +76,10 @@
 
                 </div>
 
-                <?php wp_footer(); ?>               
+              
             </footer>
         </div><!--main_container-->
+        
+        <?php wp_footer(); ?>             
     </body>
 </html>

@@ -47,7 +47,7 @@ get_header( 'shop' );
         ?>
         </div>
 
-        <?php
+<?php
      get_sidebar();
-        get_footer() ; 
-        ?>
+    get_footer() ; 
+?>

@@ -13,8 +13,8 @@ get_header();
      <section class="below_header"> 
         <div id="notice"> powered by 404.php </div>
 
-		<h2><?php _e( 'This is somewhat embarrassing, isn’t it?', 'twentythirteen' ); ?></h2>
-		<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentythirteen' ); ?></p>
+		<h2><?php _e( 'This is somewhat embarrassing, isn’t it?', 'dukasite' ); ?></h2>
+		<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'dukasite' ); ?></p>
 
 		<?php get_search_form(); ?>
 

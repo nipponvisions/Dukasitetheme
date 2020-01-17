@@ -233,9 +233,9 @@ footer{
 }
 
 footer h3,h4,h5{
-	
 	margin: 0;
 	padding: 5px 0px;
+	background-color: #efe4cf;
 }
 
 
@@ -266,8 +266,6 @@ footer h3,h4,h5{
 	list-style: none;
 	font-size: 11px;
 }
-
-
 
 
 ul.jump_to{	
@@ -668,8 +666,6 @@ ol.commentlist {
 .comment-notes{
 
 }
-
-
 
 #email-notes{
 display: block;
